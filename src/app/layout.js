@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import './globals.css';
 import Footer from '@/components/Footer';
+import { UseProvider } from '@/appState';
 
 export default function RootLayout({ children }) {
 	return (
@@ -42,9 +43,11 @@ export default function RootLayout({ children }) {
 				<title>{`${process.env.NEXT_PUBLIC_TITLE_APP}`}</title>
 			</head>
 			<body>
-				<Header />
-				<div>{children}</div>
-				<Footer />
+				<UseProvider>
+					<Header />
+					<div>{children}</div>
+					<Footer />
+				</UseProvider>
 			</body>
 		</html>
 	);

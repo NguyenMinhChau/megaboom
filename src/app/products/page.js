@@ -1,13 +1,35 @@
 'use client';
-import Hero from '@/components/Hero';
+import HeroGeneral from '@/components/HeroGeneral';
+import BACKGROUND_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg';
+import ImageMax from '@/assets/images/core_value/icon-05.png';
 import React from 'react';
+import ContentImageLeft from '@/components/ContentImageLeft';
+import ContentImageRight from '@/components/ContentImageRight';
 
 export default function ProductUs() {
 	return (
 		<>
-			<Hero />
+			<HeroGeneral
+				title="Opening"
+				desc={[,]}
+				urlImage={BACKGROUND_HERO?.src}
+			/>
 			<div className="py-[50px] px-[170px]">
-				<div className="w-full h-[350px] mt-[30px] rounded-[30px] border border-blue-600"></div>
+				<ContentImageLeft
+					urlImage={ImageMax?.src}
+					desc={[`Branding service`]}
+					descImage="Mission"
+				/>
+				<ContentImageRight
+					urlImage={ImageMax?.src}
+					desc={[`Ecological systems`]}
+					descImage="Vision"
+				/>
+				<ContentImageLeft
+					urlImage={ImageMax?.src}
+					desc={[`Automated tools`]}
+					descImage="Mission"
+				/>
 			</div>
 		</>
 	);
