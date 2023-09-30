@@ -1,25 +1,32 @@
 'use client';
-
 import Hero from '@/components/Hero';
+import CoreValue from '@/components/CoreValue';
+import BackgroundCTA from '@/assets/images/product_cta_outLibrary/BG_CTA.jpg';
+import Product from '@/components/Products';
+import CTA from '@/components/CTA';
+import OurLibrary from '@/components/OurLibrary';
+import OurClient from '@/components/OurClient';
 
 export default function Home() {
 	return (
 		<>
 			<div className={`w-full`}>
 				<Hero />
-				<div className="w-full flex items-center justify-center flex-col">
-					<h1 className="text-[40px] text-[#2766f1] space-x-7">
-						Core Values
-					</h1>
+				<CoreValue />
+				<Product />
+				<div
+					className="w-full h-full flex justify-between items-center py-[70px]"
+					style={{
+						backgroundImage: `url(${BackgroundCTA?.src})`,
+						backgroundSize: '100% 70%',
+						backgroundRepeat: 'no-repeat',
+						backgroundPosition: 'center',
+					}}
+				>
+					<CTA />
 				</div>
-				<div className="w-full flex items-center justify-center flex-col">
-					<h1 className="text-[40px] text-[#2766f1] space-x-7">
-						Products
-					</h1>
-					<p className="text-gray-400">
-						Empower the opportunities and connections
-					</p>
-				</div>
+				<OurLibrary />
+				<OurClient />
 			</div>
 		</>
 	);

@@ -20,7 +20,7 @@ export default function Header() {
 						/>
 					</Link>
 					<div
-						className={`flex-1 flex flex-row items-center justify-end gap-[60px]`}
+						className={`flex-1 uppercase flex flex-row items-center justify-end gap-[60px]`}
 					>
 						<Link href={`${routers.home}`} legacyBehavior>
 							<span
