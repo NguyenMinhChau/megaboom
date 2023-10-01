@@ -17,7 +17,7 @@ export default function AboutUs() {
 				]}
 				urlImage={BACKGROUND_HERO?.src}
 			/>
-			<div className="py-[50px] px-[170px]">
+			<div className="py-[50px] px-[13vw]">
 				<ContentImageLeft
 					urlImage={ImageMax?.src}
 					desc={[

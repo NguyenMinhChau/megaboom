@@ -19,14 +19,14 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 	},
 	// Tablet
 	[theme.breakpoints.between('sm', 'md')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	// PC
 	[theme.breakpoints.up('lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	[theme.breakpoints.between('md', 'lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	'& .item': {
 		// mobile
@@ -47,7 +47,7 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 
 export default function OurLibrary() {
 	return (
-		<div className="w-full flex items-center justify-center flex-col my-[60px] px-[170px]">
+		<div className="w-full flex items-center justify-center flex-col my-[60px] px-[13vw]">
 			<h1
 				className={`text-[40px] space-x-7`}
 				style={{
@@ -75,6 +75,8 @@ export default function OurLibrary() {
 					description="Interpret and categorize different objects in images
 							or videos"
 				/>
+			</StylesContainer>
+			<StylesContainer cols={3} spacing="8px">
 				<OurLibraryItem
 					urlBgc={BgcImageProcessing?.src}
 					title="Image Classification"

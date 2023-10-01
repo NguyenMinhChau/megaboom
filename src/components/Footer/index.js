@@ -14,7 +14,7 @@ export default function Footer() {
 					backgroundColor: PRIMARY_COLOR,
 				}}
 			>
-				<div className="p-2 flex flex-col gap-3 lg:flex-row px-[170px] md:flex-row justify-between lg:items-start items-center">
+				<div className="p-2 w-full flex flex-col gap-3 lg:flex-row px-[13vw] md:flex-row justify-between lg:items-start items-center">
 					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[3]">
 						<Link href={routers.home} className="inline-block w-48">
 							<Image

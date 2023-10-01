@@ -8,7 +8,6 @@ import { PRIMARY_COLOR } from '@/styles/color.global';
 const StylesContainer = styled('div')(({ theme }) => ({
 	display: 'flex',
 	flexWrap: 'wrap',
-	padding: '0 170px',
 	marginTop: '30px',
 
 	[theme.breakpoints.up('xs')]: {
@@ -16,14 +15,14 @@ const StylesContainer = styled('div')(({ theme }) => ({
 	},
 	// Tablet
 	[theme.breakpoints.between('sm', 'md')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	// PC
 	[theme.breakpoints.up('lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	[theme.breakpoints.between('md', 'lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	gap: '25px',
 	width: '100%',
@@ -33,7 +32,7 @@ const StylesContainer = styled('div')(({ theme }) => ({
 export default function Product() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col my-[60px]">
+			<div className="w-full flex items-center justify-center flex-col my-[60px] px-[13vw]">
 				<h1
 					className="text-[40px] space-x-7"
 					style={{

@@ -20,14 +20,14 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 	},
 	// Tablet
 	[theme.breakpoints.between('sm', 'md')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	// PC
 	[theme.breakpoints.up('lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	[theme.breakpoints.between('md', 'lg')]: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 	'& .item': {
 		// mobile
@@ -47,7 +47,7 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 
 export default function CTA() {
 	return (
-		<div className="w-full h-full px-[170px]">
+		<div className="w-full h-full px-[13vw]">
 			<StylesContainer cols={2} spacing="8px">
 				<div className="item flex-2 flex flex-col justify-center items-start">
 					<div className="text-white text-[35px] font-normal">
@@ -70,7 +70,7 @@ export default function CTA() {
 						Contact us
 					</Link>
 				</div>
-				<div className="item">
+				<div className="item flex items-center justify-center">
 					<Image
 						src={HandPointing}
 						className={`w-[467px] h-[467px]`}

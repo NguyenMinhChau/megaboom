@@ -23,7 +23,7 @@ export default function Header() {
 	return (
 		<>
 			<div
-				className={`w-full min-h-[78px] flex items-center justify-center px-[170px] ${
+				className={`w-full min-h-[78px] flex items-center justify-center px-[13vw] ${
 					sticky
 						? 'fixed top-0 left-0 z-50 duration-500 transition-all bg-[#2766f1]'
 						: 'bg-white'

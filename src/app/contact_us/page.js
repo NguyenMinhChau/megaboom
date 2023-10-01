@@ -35,7 +35,7 @@ export default function ContactUs() {
 				]}
 				urlImage={BACKGROUND_HERO?.src}
 			/>
-			<div className="py-[50px] px-[170px]">
+			<div className="py-[50px] px-[13vw]">
 				<div className={`${cx('form_container')}`}>
 					<FormInput
 						placeholder="Your full name"
