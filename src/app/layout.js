@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import './globals.css';
 import Footer from '@/components/Footer';
 import { UseProvider } from '@/appState';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export default function RootLayout({ children }) {
 	return (
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
 					<Header />
 					<div>{children}</div>
 					<Footer />
+					<ScrollToTop />
 				</UseProvider>
 			</body>
 		</html>
