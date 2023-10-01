@@ -4,7 +4,7 @@ import React from 'react';
 export default function OurClient() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col my-[60px] px-[170px]">
+			<div className="w-full flex items-center justify-center flex-col mb-[60px] mt-[180px] px-[170px]">
 				<h1
 					className="text-[40px] space-x-7"
 					style={{

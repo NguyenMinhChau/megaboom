@@ -51,7 +51,7 @@ export default function OurLibrary() {
 			<h1
 				className={`text-[40px] space-x-7`}
 				style={{
-					color: PRIMARY_COLOR,
+					color: '#FFFFFF',
 				}}
 			>
 				Our Library
