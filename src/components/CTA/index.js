@@ -50,10 +50,10 @@ export default function CTA() {
 		<div className="w-full h-full px-[13vw]">
 			<StylesContainer cols={2} spacing="8px">
 				<div className="item flex-2 flex flex-col justify-center items-start">
-					<div className="text-white text-[35px] font-normal">
+					<div className="text-white text-[25px] sm:text-[35px] font-normal">
 						On click,
 					</div>
-					<div className="text-white text-[35px] font-normal mb-3">
+					<div className="text-white text-[25px] sm:text-[35px] font-normal mb-3">
 						All-in-one solutions
 					</div>
 					<div className="text-white text-[18px] font-thin">
@@ -62,7 +62,7 @@ export default function CTA() {
 					</div>
 					<Link
 						href={routers.contact_us}
-						className="font-medium text-center rounded-2xl w-[269px] text-[14px] mt-3 bg-white py-2 uppercase"
+						className="font-medium text-center rounded-2xl w-full lg:w-[269px] text-[14px] mt-3 bg-white py-2 uppercase"
 						style={{
 							color: PRIMARY_COLOR,
 						}}

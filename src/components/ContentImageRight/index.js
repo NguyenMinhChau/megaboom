@@ -49,7 +49,7 @@ export default function ContentImageRight({
 			<div
 				className={`${cx(
 					'content-right',
-				)} flex flex-col lg:items-start items-center justify-start lg:w-[20%] md:w-[100%] w-[100%]`}
+				)} flex flex-col lg:items-end items-center justify-start lg:w-[20%] md:w-[100%] w-[100%]`}
 			>
 				<div
 					className={`${cx('right_img')}`}

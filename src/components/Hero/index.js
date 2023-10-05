@@ -7,7 +7,7 @@ export default function Hero() {
 		<>
 			<div className={`w-full`}>
 				<div
-					className={`flex flex-col items-start justify-end w-full h-screen pb-[12vh] px-[13vw]`}
+					className={`flex flex-col items-start justify-end w-full h-[70vh] lg:h-screen pb-[12vh] px-[13vw]`}
 					style={{
 						backgroundImage: `url(${BACKGROUND_HERO?.src})`,
 						backgroundSize: '100% 100%',
@@ -17,17 +17,17 @@ export default function Hero() {
 				>
 					<div className="flex justify-start items-start flex-col">
 						<h1
-							className={`text-[50px] font-medium text-center text-white`}
+							className={`text-[50px] font-medium text-justify sm:text-center text-white`}
 						>
 							Explore
 						</h1>
 						<h1
-							className={`text-[50px] font-medium text-center text-white`}
+							className={`text-[50px] font-medium text-justify sm:text-center text-white`}
 						>
 							The Endless Possibility
 						</h1>
-						<p className={`text-[25px] text-center text-white`}>
-							The best place to buy your favorite boomboxes
+						<p className={`text-[21px] font-[200] text-justify sm:text-center text-white`}>
+							At Megaboom, we provide the all-inclusive marketing services tailored to fintech area
 						</p>
 					</div>
 				</div>

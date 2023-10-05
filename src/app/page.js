@@ -13,8 +13,11 @@ export default function Home() {
 			<div className={`w-full`}>
 				<Hero />
 				<CoreValue />
+				<div className='xl:hidden'>
+					<Product />
+				</div>
 				<div
-					className="w-full flex justify-between items-center h-[1200px] relative"
+					className="w-full flex justify-between items-center h-[600px] lg:h-[1200px] relative"
 					style={{
 						backgroundImage: `url(${BackgroundCTA?.src})`,
 						backgroundSize: '100% 70%',
@@ -22,13 +25,16 @@ export default function Home() {
 						backgroundPosition: 'center',
 					}}
 				>
-					<div className="absolute top-[-15%] left-0 right-0">
+					<div className="absolute hidden xl:block top-[-15%] left-0 right-0">
 						<Product />
 					</div>
 					<CTA />
-					<div className="absolute bottom-[-15%] left-0 right-0">
+					<div className="absolute hidden xl:block bottom-[-15%] left-0 right-0">
 						<OurLibrary />
 					</div>
+				</div>
+				<div className='xl:hidden'>
+					<OurLibrary />
 				</div>
 				<OurClient />
 			</div>
