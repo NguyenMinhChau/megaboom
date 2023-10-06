@@ -40,7 +40,7 @@ const StylesContainer = styled('div')(({ theme }) => ({
 export default function CoreValue() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col mt-[60px] mb-[180px] px-[13vw]">
+			<div className="w-full flex items-center justify-center flex-col mt-[60px] mb-[60px] lg:mb-[180px] px-[4vw] lg:px-[13vw]">
 				<h1
 					className={`text-[40px] space-x-7`}
 					style={{

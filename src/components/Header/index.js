@@ -33,7 +33,7 @@ export default function Header() {
 	return (
 		<>
 			<div
-				className={`w-full min-h-[78px] flex items-center justify-center px-[13vw] ${sticky
+				className={`w-full min-h-[78px] flex items-center justify-center px-[4vw] lg:px-[13vw] ${sticky
 					? 'fixed top-0 left-0 z-50 duration-500 transition-all bg-[#2766f1]'
 					: 'bg-white'
 					}`}
@@ -121,7 +121,7 @@ export default function Header() {
 				animate={isOpen ? 'open' : 'closed'}
 				variants={openMenuTablet}
 			>
-				<ul className='list-none py-[20px] px-[13vw]'>
+				<ul className='list-none py-[20px] px-[4vw]'>
 					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
 						<Link href={`${routers.home}`} legacyBehavior>
 							Home

@@ -9,12 +9,12 @@ export default function Footer() {
 	return (
 		<>
 			<div
-				className="w-full min-h-[300px] flex justify-between items-center"
+				className="w-full py-[20px] lg:py-0 min-h-[300px] flex justify-between items-center"
 				style={{
 					backgroundColor: PRIMARY_COLOR,
 				}}
 			>
-				<div className="p-2 w-full flex flex-col gap-3 lg:flex-row px-[13vw] md:flex-row justify-between lg:items-start items-center">
+				<div className="p-2 w-full flex flex-col gap-3 lg:flex-row px-[4vw] lg:px-[13vw] md:flex-row justify-between lg:items-start items-center">
 					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[3]">
 						<Link href={routers.home} className="inline-block w-48">
 							<Image

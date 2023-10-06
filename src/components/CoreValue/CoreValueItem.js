@@ -6,11 +6,17 @@ import React from 'react';
 const StylesItem = styled('div')(
 	({ theme, cols, spacing, colorBgcHover, className }) => ({
 		// mobile
-		[theme.breakpoints.up('xs')]: {},
+		[theme.breakpoints.up('xs')]: {
+			width: '100vw'
+		},
 		// Tablet
-		[theme.breakpoints.between('sm', 'md')]: {},
+		[theme.breakpoints.between('sm', 'md')]: {
+			width: '44vw'
+		},
 		// PC
-		[theme.breakpoints.up('lg')]: {},
+		[theme.breakpoints.up('lg')]: {
+			width: '200px',
+		},
 		[theme.breakpoints.between('md', 'lg')]: {},
 		backgroundColor: '#ffffff',
 		color: '#000000',
@@ -22,7 +28,6 @@ const StylesItem = styled('div')(
 		overflow: 'hidden',
 		padding: '12px',
 		height: '200px',
-		width: '200px',
 		'&:hover': {
 			transition: 'all 0.3s linear',
 			color: '#ffffff',

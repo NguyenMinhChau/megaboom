@@ -25,7 +25,7 @@ export default function OurTeams({ desc, urlImage }) {
 				></div>
 				{desc && (
 					<div
-						className={`text-black text-[20px] w-full text-justify leading-8`}
+						className={`text-black text-[18px] sm:text-[20px] w-full text-justify leading-8`}
 						dangerouslySetInnerHTML={{ __html: desc }}
 					></div>
 				)}

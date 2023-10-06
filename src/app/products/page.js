@@ -14,7 +14,7 @@ export default function ProductUs() {
 				desc={[,]}
 				urlImage={BACKGROUND_HERO?.src}
 			/>
-			<div className="py-[50px] px-[13vw]">
+			<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 				<ContentImageLeft
 					urlImage={ImageMax?.src}
 					desc={[`Branding service`]}

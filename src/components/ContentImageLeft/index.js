@@ -19,7 +19,7 @@ export default function ContentImageLeft({
 		<div
 			className={`${cx(
 				'content-container',
-			)} lg:flex-row md:flex-row flex-col-reverse py-[60px]`}
+			)} lg:flex-row md:flex-row flex-col-reverse py-[20px] sm:py-[60px]`}
 		>
 			<div
 				className={`${cx(
@@ -64,7 +64,7 @@ export default function ContentImageLeft({
 								<div
 									className={`${cx(
 										'middle_desc_text',
-									)} text-[#000]`}
+									)} text-[#000] text-[16px] sm:text-[18px]`}
 									key={index}
 									dangerouslySetInnerHTML={{ __html: item }}
 								></div>

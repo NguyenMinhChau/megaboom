@@ -5,11 +5,17 @@ import React from 'react';
 
 const StylesItem = styled('div')(({ theme, cols, spacing, className }) => ({
 	// mobile
-	[theme.breakpoints.up('xs')]: {},
+	[theme.breakpoints.up('xs')]: {
+		width: '100vw',
+	},
 	// Tablet
-	[theme.breakpoints.between('sm', 'md')]: {},
+	[theme.breakpoints.between('sm', 'md')]: {
+		width: '44vw',
+	},
 	// PC
-	[theme.breakpoints.up('lg')]: {},
+	[theme.breakpoints.up('lg')]: {
+		width: '269px',
+	},
 
 	[theme.breakpoints.between('md', 'lg')]: {},
 
@@ -22,7 +28,6 @@ const StylesItem = styled('div')(({ theme, cols, spacing, className }) => ({
 	justifyContent: 'center',
 	overflow: 'hidden',
 	height: '269px',
-	width: '269px',
 	'&:hover': {
 		transition: 'all 0.3s linear',
 	},

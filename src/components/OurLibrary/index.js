@@ -30,29 +30,31 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 	},
 	'& .item': {
 		// mobile
-		[theme.breakpoints.up('xs')]: {},
+		[theme.breakpoints.up('xs')]: {
+			width: '92vw',
+		},
 		// Tablet
-		[theme.breakpoints.between('sm', 'md')]: {},
+		[theme.breakpoints.between('sm', 'md')]: {
+			width: '44vw',
+		},
 		// PC
-		[theme.breakpoints.up('lg')]: {},
+		[theme.breakpoints.up('lg')]: {
+			width: '276px',
+		},
 		[theme.breakpoints.between('md', 'lg')]: {},
 		borderRadius: '30px',
 		backgroundColor: '#fff',
 		color: '#000',
 		overflow: 'hidden',
-		width: '276px',
 		height: '182px',
 	},
 }));
 
 export default function OurLibrary() {
 	return (
-		<div className="w-full flex items-center justify-center flex-col my-[60px] px-[13vw]">
+		<div className="w-full flex items-center justify-center flex-col my-[10px] xl:my-[60px] px[4vw] xl:px-[13vw]">
 			<h1
-				className={`text-[40px] space-x-7`}
-				style={{
-					color: '#FFFFFF',
-				}}
+				className={`text-[40px] space-x-7 text-[#2766f1] xl:text-[#fff]`}
 			>
 				Our Library
 			</h1>

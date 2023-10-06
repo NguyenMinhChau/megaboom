@@ -32,7 +32,7 @@ const StylesContainer = styled('div')(({ theme }) => ({
 export default function Product() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col my-[60px] px-[13vw]">
+			<div className="w-full flex items-center justify-center flex-col my-[10px] lg:my-[60px] px-[4vw] lg:px-[13vw]">
 				<h1
 					className="text-[40px] space-x-7"
 					style={{

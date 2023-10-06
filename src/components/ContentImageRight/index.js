@@ -16,7 +16,7 @@ export default function ContentImageRight({
 		<div
 			className={`${cx(
 				'content-container',
-			)} py-[70px] lg:flex-row md:flex-row flex-col-reverse`}
+			)} py-[20px] sm:py-[60px] lg:flex-row md:flex-row flex-col-reverse`}
 		>
 			<div
 				className={`${cx(
