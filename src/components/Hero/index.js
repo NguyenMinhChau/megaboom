@@ -7,7 +7,7 @@ export default function Hero() {
 		<>
 			<div className={`w-full`}>
 				<div
-					className={`flex flex-col items-start justify-end w-full h-[70vh] lg:h-screen pb-[12vh] px-[4vw] lg:px-[13vw]`}
+					className={`flex flex-col items-start justify-end w-full h-[70vh] lg:h-screen pb-[12vh] px-[13vw]`}
 					style={{
 						backgroundImage: `url(${BACKGROUND_HERO?.src})`,
 						backgroundSize: '100% 100%',

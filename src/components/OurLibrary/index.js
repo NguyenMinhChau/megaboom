@@ -41,7 +41,9 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 		[theme.breakpoints.up('lg')]: {
 			width: '276px',
 		},
-		[theme.breakpoints.between('md', 'lg')]: {},
+		[theme.breakpoints.between('md', 'lg')]: {
+			width: '44vw',
+		},
 		borderRadius: '30px',
 		backgroundColor: '#fff',
 		color: '#000',
@@ -77,8 +79,6 @@ export default function OurLibrary() {
 					description="Interpret and categorize different objects in images
 							or videos"
 				/>
-			</StylesContainer>
-			<StylesContainer cols={3} spacing="8px">
 				<OurLibraryItem
 					urlBgc={BgcImageProcessing?.src}
 					title="Image Classification"

@@ -7,7 +7,7 @@ const HeroGeneral = ({ title, desc, urlImage }) => {
 		<>
 			<div className={`w-full`}>
 				<div
-					className={`flex flex-col items-center justify-center w-full h-screen px-[4vw] lg:px-[170px]`}
+					className={`flex flex-col items-center justify-center w-full h-screen px-[4vw] sm:px-[170px]`}
 					style={{
 						backgroundImage: `url(${urlImage})`,
 						backgroundSize: '100% 100%',

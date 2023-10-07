@@ -17,7 +17,9 @@ const StylesItem = styled('div')(
 		[theme.breakpoints.up('lg')]: {
 			width: '200px',
 		},
-		[theme.breakpoints.between('md', 'lg')]: {},
+		[theme.breakpoints.between('md', 'lg')]: {
+			width: '44vw'
+		},
 		backgroundColor: '#ffffff',
 		color: '#000000',
 		borderRadius: '30px',
@@ -49,7 +51,7 @@ export default function CoreValueItem({
 				cols={4}
 				spacing="8px"
 				colorBgcHover={colorBgcHover}
-				className={`shadow-lg group duration-500 transition-all`}
+				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] lg:shadow-lg group duration-500 transition-all`}
 			>
 				<Image
 					src={urlImage}

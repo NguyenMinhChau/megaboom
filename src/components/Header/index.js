@@ -50,7 +50,7 @@ export default function Header() {
 					<div
 						className={`hidden flex-1 uppercase lg:flex flex-row items-center justify-end gap-[60px]`}
 					>
-						<Link href={`${routers.home}`} legacyBehavior>
+						<Link href={`${routers.home}`} className='block'>
 							<span
 								className={`${sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
@@ -61,7 +61,7 @@ export default function Header() {
 								Home
 							</span>
 						</Link>
-						<Link href={`${routers.about_us}`} legacyBehavior>
+						<Link href={`${routers.about_us}`} className='block'>
 							<span
 								className={`${sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
@@ -72,7 +72,7 @@ export default function Header() {
 								About Us
 							</span>
 						</Link>
-						<Link href={`${routers.products}`} legacyBehavior>
+						<Link href={`${routers.products}`} className='block'>
 							<span
 								className={`${sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
@@ -83,7 +83,7 @@ export default function Header() {
 								Products
 							</span>
 						</Link>
-						<Link href={`${routers.contact_us}`} legacyBehavior>
+						<Link href={`${routers.contact_us}`} className='block'>
 							<span
 								className={`${sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
@@ -100,14 +100,14 @@ export default function Header() {
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						<div
-							className={`${genericHamburgerLine} ${isOpen
+							className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen
 								? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
 						/>
-						<div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+						<div className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
 						<div
-							className={`${genericHamburgerLine} ${isOpen
+							className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen
 								? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
@@ -123,22 +123,22 @@ export default function Header() {
 			>
 				<ul className='list-none py-[20px] px-[4vw]'>
 					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
-						<Link href={`${routers.home}`} legacyBehavior>
+						<Link href={`${routers.home}`} className='block'>
 							Home
 						</Link>
 					</li>
 					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
-						<Link href={`${routers.about_us}`} legacyBehavior>
+						<Link href={`${routers.about_us}`} className='block'>
 							About Us
 						</Link>
 					</li>
 					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
-						<Link href={`${routers.products}`} legacyBehavior>
+						<Link href={`${routers.products}`} className='block'>
 							Products
 						</Link>
 					</li>
 					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
-						<Link href={`${routers.contact_us}`} legacyBehavior>
+						<Link href={`${routers.contact_us}`} className='block'>
 							Contact Us
 						</Link>
 					</li>

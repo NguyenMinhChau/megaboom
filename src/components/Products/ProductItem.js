@@ -17,7 +17,9 @@ const StylesItem = styled('div')(({ theme, cols, spacing, className }) => ({
 		width: '269px',
 	},
 
-	[theme.breakpoints.between('md', 'lg')]: {},
+	[theme.breakpoints.between('md', 'lg')]: {
+		width: '44vw',
+	},
 
 	backgroundColor: '#ffffff',
 	color: '#000000',
@@ -25,7 +27,7 @@ const StylesItem = styled('div')(({ theme, cols, spacing, className }) => ({
 	display: 'flex',
 	flexDirection: 'column',
 	alignItems: 'center',
-	justifyContent: 'center',
+	justifyContent: 'space-between',
 	overflow: 'hidden',
 	height: '269px',
 	'&:hover': {
@@ -40,11 +42,11 @@ export default function ProductItem({ urlImage, title, description }) {
 			<StylesItem
 				cols={3}
 				spacing="8px"
-				className={`shadow-lg group duration-500 transition-all`}
+				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] lg:shadow-lg overflow-hidden group duration-500 transition-all`}
 			>
 				<Image
 					src={urlImage}
-					className={`w-full h-[150px] group-hover:hidden rounded-[30px]`}
+					className={`w-full h-[180px] group-hover:hidden rounded-[30px]`}
 					objectFit="contain"
 				/>
 				<div className="p-3 flex flex-col items-center justify-center">
