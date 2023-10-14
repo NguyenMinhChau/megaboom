@@ -53,10 +53,7 @@ export default function Header() {
 						<Link href={`${routers.home}`} className='block'>
 							<span
 								className={`${!sticky ? 'text-white' : 'text-black'
-									} font-medium cursor-pointer ${sticky
-										? 'hover:text-[#51d891]'
-										: 'hover:text-[#000]'
-									}`}
+									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Home
 							</span>
@@ -64,10 +61,7 @@ export default function Header() {
 						<Link href={`${routers.about_us}`} className='block'>
 							<span
 								className={`${!sticky ? 'text-white' : 'text-black'
-									} font-medium cursor-pointer ${sticky
-										? 'hover:text-[#51d891]'
-										: 'hover:text-[#000]'
-									}`}
+									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								About Us
 							</span>
@@ -75,10 +69,7 @@ export default function Header() {
 						<Link href={`${routers.products}`} className='block'>
 							<span
 								className={`${!sticky ? 'text-white' : 'text-black'
-									} font-medium cursor-pointer ${sticky
-										? 'hover:text-[#51d891]'
-										: 'hover:text-[#000]'
-									}`}
+									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Products
 							</span>
@@ -86,10 +77,7 @@ export default function Header() {
 						<Link href={`${routers.contact_us}`} className='block'>
 							<span
 								className={`${!sticky ? 'text-white' : 'text-black'
-									} font-medium cursor-pointer ${sticky
-										? 'hover:text-[#51d891]'
-										: 'hover:text-[#000]'
-									}`}
+									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Contact Us
 							</span>
