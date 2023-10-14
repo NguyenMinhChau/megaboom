@@ -20,7 +20,7 @@ export default function AboutUs() {
 						]}
 						descImage="Mission"
 						styleContainer={`py-[0px!important]`}
-						styleDescImage={`text-[#4ca9f3] font-normal`}
+						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
 				</Paper>
 				<Paper
@@ -34,7 +34,7 @@ export default function AboutUs() {
 						]}
 						descImage="Vision"
 						styleContainer={`py-[0px!important]`}
-						styleDescImage={`text-[#4ca9f3] font-normal`}
+						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
 				</Paper>
 				<Paper elevation={3} sx={{ p: 2, borderRadius: '30px' }}>
@@ -46,7 +46,7 @@ export default function AboutUs() {
 						]}
 						descImage=""
 						styleContainer={`py-[0px!important]`}
-						styleDescImage={`text-[#4ca9f3]`}
+						styleDescImage={`text-[#4ca9f3!important]`}
 					/>
 				</Paper>
 			</div>

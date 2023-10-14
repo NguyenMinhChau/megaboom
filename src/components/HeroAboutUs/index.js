@@ -6,7 +6,7 @@ export default function HeroAboutUs({}) {
 		<>
 			<div className={`w-full`}>
 				<div
-					className={`flex flex-col items-start justify-end w-full h-[70vh] lg:h-screen pb-[12vh] px-[13vw]`}
+					className={`flex flex-col items-start justify-end w-full h-[70vh] lg:h-screen`}
 					style={{
 						backgroundImage: `url(${BACKGROUND_HERO?.src})`,
 						backgroundSize: '100% 100%',
@@ -14,7 +14,13 @@ export default function HeroAboutUs({}) {
 						backgroundRepeat: 'no-repeat',
 					}}
 				>
-					<div className="flex justify-start items-start flex-col">
+					<div
+						className="flex justify-start w-full items-start flex-col pb-[12vh] px-[13vw]"
+						style={{
+							background:
+								'linear-gradient(180deg,rgba(1,0,46,0) 9%,rgba(1,0,46,.680392))',
+						}}
+					>
 						<h1
 							className={`md:text-[50px] lg:text-[100px] text-[50px] font-medium text-left lg:text-justify sm:text-center text-white`}
 						>
