@@ -59,7 +59,7 @@ export default function ProductUs() {
 					urlImage={ImageEBranding?.src}
 					desc={[
 						`<h1 style='font-size: 36px; color: #51d891; text-align: right'>Branding Services</h1>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Connect retable companies to customers and agency pertners through otffne/ online events</p>`,
+						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Connect retable companies to customers and agency pertners through offline/ online events</p>`,
 						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Intergrated marketing • SEO Lead generation • Campaign activation</p>`,
 					]}
 					descImage=""
