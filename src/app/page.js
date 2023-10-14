@@ -10,14 +10,14 @@ import OurClient from '@/components/OurClient';
 export default function Home() {
 	return (
 		<>
-			<div className={`w-full`}>
+			<div className={`w-full flex flex-col justify-between items-center`}>
 				<Hero />
 				<CoreValue />
-				<div className='xl:hidden'>
+				<div className='lg:hidden'>
 					<Product />
 				</div>
 				<div
-					className="w-full flex justify-between items-center h-[600px] lg:h-[1200px] relative"
+					className="2xl:w-[1400px] w-full flex justify-between items-center h-[600px] lg:h-[1200px] relative"
 					style={{
 						backgroundImage: `url(${BackgroundCTA?.src})`,
 						backgroundSize: '100% 70%',
@@ -25,15 +25,15 @@ export default function Home() {
 						backgroundPosition: 'center',
 					}}
 				>
-					<div className="absolute hidden xl:block top-[-15%] left-0 right-0">
+					<div className="absolute hidden lg:block top-[-15%] left-0 right-0">
 						<Product />
 					</div>
 					<CTA />
-					<div className="absolute hidden xl:block bottom-[-15%] left-0 right-0">
+					<div className="absolute hidden lg:block bottom-[-15%] left-0 right-0">
 						<OurLibrary />
 					</div>
 				</div>
-				<div className='xl:hidden'>
+				<div className='lg:hidden'>
 					<OurLibrary />
 				</div>
 				<OurClient />

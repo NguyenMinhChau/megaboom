@@ -42,7 +42,7 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 			width: '276px',
 		},
 		[theme.breakpoints.between('md', 'lg')]: {
-			width: '44vw',
+			width: '276px',
 		},
 		borderRadius: '30px',
 		backgroundColor: '#fff',
@@ -56,7 +56,7 @@ export default function OurLibrary() {
 	return (
 		<div className="w-full flex items-center justify-center flex-col my-[10px] xl:my-[60px] px[4vw] xl:px-[13vw]">
 			<h1
-				className={`text-[40px] space-x-7 text-[#2766f1] xl:text-[#fff]`}
+				className={`text-[40px] space-x-7 text-[#2766f1] lg:text-[#fff]`}
 			>
 				Our Library
 			</h1>

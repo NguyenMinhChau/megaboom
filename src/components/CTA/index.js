@@ -51,7 +51,7 @@ export default function CTA() {
 			<StylesContainer cols={2} spacing="8px">
 				<div className="item flex-2 flex flex-col justify-center items-start">
 					<div className="text-white text-[25px] sm:text-[35px] font-normal">
-						On click,
+						Just One click
 					</div>
 					<div className="text-white text-[25px] sm:text-[35px] font-normal mb-3">
 						All-in-one solutions
@@ -62,12 +62,12 @@ export default function CTA() {
 					</div>
 					<Link
 						href={routers.contact_us}
-						className="font-medium text-center rounded-2xl w-full lg:w-[269px] text-[14px] mt-3 bg-white py-2 uppercase"
+						className="font-[500] text-center rounded-[100px] w-full lg:w-[269px] text-[16px] mt-3 bg-[#3BA1F2] py-3  border-[2px] border-solid border-white"
 						style={{
-							color: PRIMARY_COLOR,
+							color: "#fff",
 						}}
 					>
-						Contact us
+						Explore more
 					</Link>
 				</div>
 				<div className="item flex items-center justify-center">

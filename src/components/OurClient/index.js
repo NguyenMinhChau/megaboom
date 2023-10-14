@@ -1,5 +1,13 @@
 import { PRIMARY_COLOR } from '@/styles/color.global';
 import React from 'react';
+import ClientList from '../ClientList';
+import Etoro from "@/assets/images/clients/Etoro.png"
+import FxPro from "@/assets/images/clients/FxPro.png"
+import Octafx from "@/assets/images/clients/Octafx.png"
+import Remitano from "@/assets/images/clients/Remitano.png"
+import StarTrader from "@/assets/images/clients/StarTrader.png"
+
+const clientList = [Octafx, StarTrader, FxPro, Remitano, Etoro]
 
 export default function OurClient() {
 	return (
@@ -19,7 +27,7 @@ export default function OurClient() {
 				<p className="text-gray-400 text-center lg:text-start">
 					your current status and threshold of expectation
 				</p>
-				<div className="w-full h-[350px] mt-[30px] rounded-[30px] border border-blue-600"></div>
+				<ClientList clientLists={clientList} />
 			</div>
 		</>
 	);

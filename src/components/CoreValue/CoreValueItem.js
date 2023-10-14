@@ -18,7 +18,7 @@ const StylesItem = styled('div')(
 			width: '200px',
 		},
 		[theme.breakpoints.between('md', 'lg')]: {
-			width: '44vw'
+			width: '200px',
 		},
 		backgroundColor: '#ffffff',
 		color: '#000000',
@@ -32,7 +32,7 @@ const StylesItem = styled('div')(
 		height: '200px',
 		'&:hover': {
 			transition: 'all 0.3s linear',
-			color: '#ffffff',
+			color: '#333',
 			backgroundColor: colorBgcHover,
 		},
 		...className,
@@ -51,7 +51,7 @@ export default function CoreValueItem({
 				cols={4}
 				spacing="8px"
 				colorBgcHover={colorBgcHover}
-				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] lg:shadow-lg group duration-500 transition-all`}
+				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] group duration-500 transition-all`}
 			>
 				<Image
 					src={urlImage}

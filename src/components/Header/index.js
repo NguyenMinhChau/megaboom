@@ -27,15 +27,15 @@ export default function Header() {
 		closed: { transform: 'translateX(-1025px)', transition: 2 },
 	};
 
-	const LogoSticky = sticky ? LogoMegaBoomWhite : LogoMegaBoom;
-	const genericHamburgerLine = `h-1 w-full my-1 rounded-full bg-black transition ease transform duration-300`;
+	const LogoSticky = !sticky ? LogoMegaBoomWhite : LogoMegaBoom;
+	const genericHamburgerLine = `h-1 w-full my-1 rounded-full transition ease transform duration-300`;
 
 	return (
 		<>
 			<div
-				className={`w-full min-h-[78px] flex items-center justify-center px-[4vw] lg:px-[13vw] ${sticky
-					? 'fixed top-0 left-0 z-50 duration-500 transition-all bg-[#2766f1]'
-					: 'bg-white'
+				className={`fixed top-0 left-0 z-50 w-full min-h-[78px] flex items-center justify-center px-[4vw] lg:px-[13vw] ${sticky
+					? 'duration-500 transition-all bg-[#fff] shadow-[rgba(7,_65,_210,_0.1)_0px_4px_4px]'
+					: 'bg-transparent'
 					}`}
 			>
 				<div
@@ -52,10 +52,10 @@ export default function Header() {
 					>
 						<Link href={`${routers.home}`} className='block'>
 							<span
-								className={`${sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
 										? 'hover:text-[#51d891]'
-										: 'hover:text-[#2766f1]'
+										: 'hover:text-[#000]'
 									}`}
 							>
 								Home
@@ -63,10 +63,10 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.about_us}`} className='block'>
 							<span
-								className={`${sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
 										? 'hover:text-[#51d891]'
-										: 'hover:text-[#2766f1]'
+										: 'hover:text-[#000]'
 									}`}
 							>
 								About Us
@@ -74,10 +74,10 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.products}`} className='block'>
 							<span
-								className={`${sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
 										? 'hover:text-[#51d891]'
-										: 'hover:text-[#2766f1]'
+										: 'hover:text-[#000]'
 									}`}
 							>
 								Products
@@ -85,10 +85,10 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.contact_us}`} className='block'>
 							<span
-								className={`${sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? 'text-white' : 'text-black'
 									} font-medium cursor-pointer ${sticky
 										? 'hover:text-[#51d891]'
-										: 'hover:text-[#2766f1]'
+										: 'hover:text-[#000]'
 									}`}
 							>
 								Contact Us
@@ -100,14 +100,14 @@ export default function Header() {
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						<div
-							className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen
+							className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen
 								? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
 						/>
-						<div className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+						<div className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
 						<div
-							className={`${genericHamburgerLine} ${sticky && "bg-[#fff]"} ${isOpen
+							className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen
 								? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
@@ -122,22 +122,22 @@ export default function Header() {
 				variants={openMenuTablet}
 			>
 				<ul className='list-none py-[20px] px-[4vw]'>
-					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
+					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#000]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
 						<Link href={`${routers.home}`} className='block'>
 							Home
 						</Link>
 					</li>
-					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
+					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#000]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
 						<Link href={`${routers.about_us}`} className='block'>
 							About Us
 						</Link>
 					</li>
-					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
+					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#000]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
 						<Link href={`${routers.products}`} className='block'>
 							Products
 						</Link>
 					</li>
-					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#2766f1]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
+					<li onClick={() => setIsOpen(false)} className='cursor-pointer uppercase text-black hover:text-[#000]  py-[15px] border-b-[1px] border-solid border-[#dcdce9]'>
 						<Link href={`${routers.contact_us}`} className='block'>
 							Contact Us
 						</Link>

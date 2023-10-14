@@ -1,6 +1,8 @@
 'use client';
 import { styled } from '@mui/material';
-import BgcImageProcessing from '@/assets/images/product_cta_outLibrary/image_processing.png';
+import Branding from '@/assets/images/product_cta_outLibrary/Branding.png';
+import ECOSYSTEM from '@/assets/images/product_cta_outLibrary/ECOSYSTEM.png';
+import Marketing from '@/assets/images/product_cta_outLibrary/Marketing.png';
 import React from 'react';
 import ProductItem from './ProductItem';
 import { PRIMARY_COLOR } from '@/styles/color.global';
@@ -32,7 +34,7 @@ const StylesContainer = styled('div')(({ theme }) => ({
 export default function Product() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col my-[10px] lg:my-[60px] px-[4vw] lg:px-[13vw]">
+			<div className="w-full flex items-center justify-center flex-col my-[10px] lg:my-[60px] px-[4vw] 2xl:px-[13vw]">
 				<h1
 					className="text-[40px] space-x-7"
 					style={{
@@ -47,18 +49,18 @@ export default function Product() {
 				<StylesContainer>
 					<ProductItem
 						title="Ecological system"
-						description="Design the own system of communication channels to create qualified acquisition funnel"
-						urlImage={BgcImageProcessing}
+						description="An integrated portfolio of consulting, experience and expertise to design your own brand's ecological system"
+						urlImage={ECOSYSTEM}
 					/>
 					<ProductItem
-						title="Branding services"
-						description="onnect reliable companies to customers and agency partners through offline/online events"
-						urlImage={BgcImageProcessing}
+						title="Branding service"
+						description="Spread out your brand image to customers and agency partners through offline/ online activities"
+						urlImage={Branding}
 					/>
 					<ProductItem
-						title="Automated tools"
-						description="Develop automated support tools which help saving time transaction across platforms"
-						urlImage={BgcImageProcessing}
+						title="Marketing activities"
+						description="Develop customized marketing strategies and relevant execution plan by our hands-on fintech insight"
+						urlImage={Marketing}
 					/>
 				</StylesContainer>
 			</div>
