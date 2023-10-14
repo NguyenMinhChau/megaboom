@@ -31,11 +31,7 @@
 }
 
 .input:not(:placeholder-shown) {
-	font-weight: 600;
-}
-
-.input:hover {
-	border-color: #2766f1;
+	font-weight: normal;
 }
 
 .input:focus::-webkit-input-placeholder {

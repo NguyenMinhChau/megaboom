@@ -1,13 +1,11 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
 
-const HeroGeneral = ({ title, desc, urlImage }) => {
+const HeroGeneral = ({ title, desc, urlImage, urlImageHero }) => {
 	return (
 		<>
 			<div className={`w-full`}>
 				<div
-					className={`flex flex-col items-center justify-center w-full h-screen px-[4vw] sm:px-[170px]`}
+					className={`flex gap-2 flex-row items-center justify-center w-full h-screen px-[4vw] lg:px-[13vw]`}
 					style={{
 						backgroundImage: `url(${urlImage})`,
 						backgroundSize: '100% 100%',
@@ -15,19 +13,30 @@ const HeroGeneral = ({ title, desc, urlImage }) => {
 						backgroundRepeat: 'no-repeat',
 					}}
 				>
-					<div className="flex justify-center items-center flex-col">
-						<h1
-							className={`text-[30px] sm:text-[50px] font-medium text-center text-white`}
+					<div className="flex flex-2 justify-start items-start flex-col">
+						<div
+							className={`md:text-[50px] lg:text-[100px] text-[50px] font-medium text-white`}
 						>
 							{title}
-						</h1>
+						</div>
 						{desc && (
 							<div
-								className={`text-white text-[18px] text-center leading-6`}
+								className={`text-white text-[21px] text-left leading-6`}
 								dangerouslySetInnerHTML={{ __html: desc }}
 							></div>
 						)}
 					</div>
+					{urlImageHero && (
+						<div
+							className={`flex items-end justify-end flex-1 h-[50%]`}
+						>
+							<img
+								src={urlImageHero}
+								alt="hero"
+								className={`h-full w-[70%] object-contain`}
+							/>
+						</div>
+					)}
 				</div>
 			</div>
 		</>

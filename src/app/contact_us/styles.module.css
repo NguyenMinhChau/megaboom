@@ -23,14 +23,6 @@
 	background: #fff;
 	color: #000;
 }
-.textarea:hover {
-	box-shadow: 0 0 0 1px #2766f1;
-}
-
-.textarea:focus {
-	border-color: #2766f1;
-	box-shadow: 0 0 0 0.1rem #2766f1;
-}
 
 .textarea:focus::-webkit-input-placeholder {
 	color: #000;
@@ -45,11 +37,16 @@
 }
 .btn {
 	margin-top: 15px;
-	width: 100%;
-	color: #fff;
-	background-color: #2766f1;
+	min-width: 200px;
+	border-radius: 30px;
+	color: #000;
+	font-weight: normal;
+	background-color: #e1f43e;
+	border: 2px solid transparent;
+	transition: all 0.3s linear;
 }
 .btn:hover {
-	color: #2766f1;
+	color: #000;
 	background-color: #ffffff;
+	border-color: #e1f43e;
 }

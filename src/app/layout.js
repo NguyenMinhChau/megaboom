@@ -47,7 +47,6 @@ export default function RootLayout({ children }) {
 				<UseProvider>
 					<Header />
 					<div>{children}</div>
-					<Footer />
 					<ScrollToTop />
 				</UseProvider>
 			</body>

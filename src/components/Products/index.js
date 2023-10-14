@@ -41,7 +41,7 @@ export default function Product() {
 				>
 					Products
 				</h1>
-				<p className="text-gray-400">
+				<p className="text-gray-400 text-center">
 					Empower the opportunities and connections
 				</p>
 				<StylesContainer>

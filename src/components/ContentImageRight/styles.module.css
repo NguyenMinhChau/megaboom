@@ -1,79 +1,77 @@
 .content-container {
-  display: flex;
-  gap: 4px;
+	display: flex;
+	gap: 20px;
 }
 .left {
-  display: block;
-  position: absolute;
-  transform: rotate(-90deg);
-  margin-bottom: 0;
-  top: 55px;
-  left: -60px;
-  color: var(--color-primary);
+	display: block;
+	position: absolute;
+	transform: rotate(-90deg);
+	margin-bottom: 0;
+	top: 55px;
+	left: -60px;
+	color: var(--color-primary);
 }
 .left,
 .middle_title {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .middle {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .middle_title {
-  letter-spacing: 0.5px;
-  font-size: 30px;
+	letter-spacing: 0.5px;
+	font-size: 30px;
 }
 
 .middle_desc .middle_desc_text {
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  text-align: right;
-  font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-align: right;
+	font-size: 18px;
 }
 .middle_desc .middle_desc_text a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .middle_desc .middle_desc_text + .middle_desc_text {
-  margin-top: 12px;
+	margin-top: 12px;
 }
 
 .right_img {
-  width: 80px;
-  height: 80px;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  image-rendering: auto;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 12px;
+	image-rendering: auto;
+	filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .btn-cus {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+	background-color: var(--color-primary);
+	color: var(--color-white);
 }
 
 .btn-cus::after {
-  border-top-color: var(--color-primary);
+	border-top-color: var(--color-primary);
 }
 
 .btn-cus::before {
-  border-top-color: var(--color-primary);
+	border-top-color: var(--color-primary);
 }
 
 .btn-cus:hover {
-  background-color: var(--primary-hover);
-  color: var(--color-white);
+	background-color: var(--primary-hover);
+	color: var(--color-white);
 }
 
 .btn-cus:hover::after,
 .btn-cus:hover::before {
-  border-top-color: var(--primary-hover);
+	border-top-color: var(--primary-hover);
 }
 .title {
-  line-height: 1.5;
-  text-align: justify;
+	line-height: 1.5;
+	text-align: justify;
 }
