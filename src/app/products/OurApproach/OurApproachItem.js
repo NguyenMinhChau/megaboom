@@ -6,11 +6,11 @@ import React from 'react';
 const StylesItem = styled('div')(({ theme, cols, spacing, className }) => ({
 	// mobile
 	[theme.breakpoints.up('xs')]: {
-		width: '100vw',
+		width: `calc((100% / 1) - (${spacing} * 2))`,
 	},
 	// Tablet
 	[theme.breakpoints.between('sm', 'md')]: {
-		width: '44vw',
+		width: `calc((100% / 2) - (${spacing} * 2))`,
 	},
 	// PC
 	[theme.breakpoints.up('lg')]: {

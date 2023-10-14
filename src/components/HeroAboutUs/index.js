@@ -15,7 +15,7 @@ export default function HeroAboutUs({}) {
 					}}
 				>
 					<div
-						className="flex justify-start w-full items-start flex-col pb-[12vh] px-[13vw]"
+						className="flex justify-start w-full items-start flex-col lg:pb-[12vh] md:pb-[8vh] pb-[6vh] px-[13vw]"
 						style={{
 							background:
 								'linear-gradient(180deg,rgba(1,0,46,0) 9%,rgba(1,0,46,.680392))',

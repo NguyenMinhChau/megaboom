@@ -22,7 +22,9 @@ export default function ProductUs() {
 			/>
 			<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 				<div className={`flex flex-col gap-2`}>
-					<div className={`text-[100px] text-[#555555] font-normal`}>
+					<div
+						className={`lg:text-[100px] md:text-[80px] text-[60px] text-[#555555] font-normal`}
+					>
 						Products
 					</div>
 					<div
