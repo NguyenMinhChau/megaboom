@@ -12,7 +12,6 @@
 }
 
 .select_form_container:hover {
-	border-color: #2766f1;
 	cursor: pointer;
 }
 
@@ -33,7 +32,7 @@
 	padding: 8px 12px;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
-	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all 0.3s linear;
 	color: #000;
 }
 
@@ -42,8 +41,7 @@
 }
 
 .select_list_item:hover {
-	background-color: #2766f1;
-	color: #fff;
+	background-color: #fafafa;
 }
 
 .select_form_icon i {

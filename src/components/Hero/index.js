@@ -2,7 +2,7 @@ import { PRIMARY_COLOR } from '@/styles/color.global';
 import React from 'react';
 import BACKGROUND_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg';
 
-export default function Hero() {
+export default function Hero({}) {
 	return (
 		<>
 			<div className={`w-full`}>
@@ -26,8 +26,11 @@ export default function Hero() {
 						>
 							The Endless Possibility
 						</h1>
-						<p className={`text-[21px] font-[200] text-justify sm:text-center text-white`}>
-							At Megaboom, we provide the all-inclusive marketing services tailored to fintech area
+						<p
+							className={`text-[21px] font-[200] text-justify sm:text-center text-white`}
+						>
+							At Megaboom, we provide the all-inclusive marketing
+							services tailored to fintech area
 						</p>
 					</div>
 				</div>

@@ -7,8 +7,9 @@ import Link from 'next/link';
 const cx = className.bind(styles);
 
 function Button({
-	to,
+	href,
 	className,
+	classNameTailwind,
 	onClick,
 	disabled,
 	isProcess = false,
@@ -21,8 +22,8 @@ function Button({
 		...passProps,
 		onClick,
 	};
-	if (to) {
-		props.to = to;
+	if (href) {
+		props.href = href;
 		Cp = Link;
 	}
 	if (disabled) {
@@ -33,7 +34,10 @@ function Button({
 		});
 	}
 	return (
-		<Cp className={classed} {...props}>
+		<Cp
+			className={classNameTailwind ? classNameTailwind : classed}
+			{...props}
+		>
 			{!isProcess ? (
 				children
 			) : (

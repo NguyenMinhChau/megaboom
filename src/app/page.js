@@ -6,6 +6,7 @@ import Product from '@/components/Products';
 import CTA from '@/components/CTA';
 import OurLibrary from '@/components/OurLibrary';
 import OurClient from '@/components/OurClient';
+import Footer from '@/components/Footer';
 
 export default function Home() {
 	return (
@@ -13,7 +14,7 @@ export default function Home() {
 			<div className={`w-full flex flex-col justify-between items-center`}>
 				<Hero />
 				<CoreValue />
-				<div className='lg:hidden'>
+				<div className="xl:hidden">
 					<Product />
 				</div>
 				<div
@@ -33,11 +34,12 @@ export default function Home() {
 						<OurLibrary />
 					</div>
 				</div>
-				<div className='lg:hidden'>
+				<div className="xl:hidden">
 					<OurLibrary />
 				</div>
 				<OurClient />
 			</div>
+			<Footer />
 		</>
 	);
 }

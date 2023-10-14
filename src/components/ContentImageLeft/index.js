@@ -13,27 +13,38 @@ export default function ContentImageLeft({
 	children,
 	descImage,
 	fontSizeTitle,
-	styleImage,
+	styleDescImage,
+	styleContainer,
 }) {
 	return (
 		<div
 			className={`${cx(
 				'content-container',
-			)} lg:flex-row md:flex-row flex-col-reverse py-[20px] sm:py-[60px]`}
+			)} lg:flex-row md:flex-row flex-col-reverse py-[20px] sm:py-[60px] ${styleContainer}`}
 		>
 			<div
 				className={`${cx(
 					'content-left',
-				)} flex flex-col lg:items-start items-center justify-start lg:w-[20%] md:w-[20%] w-[100%]`}
+				)} flex flex-col lg:items-start items-center ${
+					urlImage ? 'justify-start' : 'justify-center'
+				} flex-1`}
 			>
-				<div
-					className={`${cx('left_img')}`}
-					style={{
-						backgroundImage: `url('${urlImage}')`,
-					}}
-				></div>
+				{urlImage && (
+					<div
+						className={`${cx('left_img')}`}
+						style={{
+							backgroundImage: `url('${urlImage}')`,
+							width: descImage ? '150px' : '250px',
+							minWidth: descImage ? '150px' : '200px',
+							height: descImage ? '150px' : '250px',
+							minHeight: descImage ? '150px' : '200px',
+						}}
+					></div>
+				)}
 				{descImage && (
-					<div className="font-bold text-[30px] text-black">
+					<div
+						className={`font-bold text-[30px] text-black ${styleDescImage}`}
+					>
 						{descImage}
 					</div>
 				)}
@@ -41,7 +52,7 @@ export default function ContentImageLeft({
 			<div
 				className={`${cx(
 					'content-right-container',
-				)} lg:w-[80%] md:w-[80%] w-[100%]`}
+				)} w-full flex flex-col justify-start items-end`}
 			>
 				{titleHeader && (
 					<div className={`${cx('title-header')} mb12`}>
