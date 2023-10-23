@@ -48,10 +48,15 @@ export default function ProductItem({ urlImage, title, description }) {
 				spacing="8px"
 				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] overflow-hidden group duration-500 transition-all`}
 			>
-				<Image
+				{/* <Image
 					src={urlImage}
 					className={`w-full h-[180px] group-hover:hidden rounded-[30px]`}
 					objectFit="contain"
+				/> */}
+				<img
+					alt="image"
+					src={urlImage?.src}
+					className="w-full h-[180px] group-hover:hidden rounded-[30px] object-contain"
 				/>
 				<div className="p-3 flex flex-col items-center justify-center">
 					<div className={`text-[21px] my-5`}>{title}</div>
@@ -60,9 +65,12 @@ export default function ProductItem({ urlImage, title, description }) {
 					>
 						{description}
 					</p>
-					<Link href={routers.products} className='absolute text-[14px] left-[86px] right-[86px] bottom-[50px] justify-center items-center font-extralight border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:flex'>
+					<Link
+						href={routers.products}
+						className="absolute text-[14px] left-[86px] right-[86px] bottom-[50px] justify-center items-center font-extralight border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:flex"
+					>
 						<span>See more</span>
-						<ArrowForwardIosIcon className='text-[#555] text-[14px]' />
+						<ArrowForwardIosIcon className="text-[#555] text-[14px]" />
 					</Link>
 				</div>
 			</StylesItem>
