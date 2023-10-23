@@ -62,10 +62,11 @@ export default function ProductItem({ urlImage, title, description }) {
 					</p>
 					<Link
 						href={routers.products}
-						className="text-[14px] font-extralight border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:block absolute bottom-[50px]"
+						className="text-[14px] font-extralight border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:flex items-center justify-center gap-2 absolute bottom-[50px]"
 					>
-						<span>See more</span>
-						<ArrowForwardIosIcon className="text-[#555] text-[12px]" />
+						<span className="min-w-[60px]">See more</span>
+						<i class="fa-solid fa-chevron-right text-[12px]"></i>
+						{/* <ArrowForwardIosIcon className="text-[#555] text-[12px]" /> */}
 					</Link>
 				</div>
 			</StylesItem>
