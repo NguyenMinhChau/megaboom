@@ -48,10 +48,15 @@ export default function ProductItem({ urlImage, title, description }) {
 				spacing="8px"
 				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] overflow-hidden group duration-500 transition-all`}
 			>
-				<Image
+				{/* <Image
 					src={urlImage}
 					className={`w-full h-[180px] group-hover:hidden rounded-[30px]`}
 					objectFit="contain"
+				/> */}
+				<img
+					alt="image"
+					src={urlImage?.src}
+					className={`w-full h-[180px] group-hover:hidden rounded-[30px] object-contain`}
 				/>
 				<div className="p-3 flex flex-col items-center justify-center">
 					<div className={`text-[21px] my-5`}>{title}</div>
