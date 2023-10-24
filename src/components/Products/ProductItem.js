@@ -53,21 +53,21 @@ export default function ProductItem({ urlImage, title, description }) {
 					className={`w-full h-[180px] group-hover:hidden rounded-[30px]`}
 					objectFit="contain"
 				/> */}
-				<img
+				<Image
 					alt="image"
-					src={urlImage?.src}
+					src={urlImage}
 					className={`w-full h-[180px] group-hover:hidden rounded-[30px] object-contain`}
 				/>
-				<div className="p-3 flex flex-col items-center justify-center">
-					<div className={`text-[21px] my-5`}>{title}</div>
+				<div className="p-3 flex flex-col items-center justify-center font-extralight">
+					<div className={`text-[#000] font-[500] text-[21px] my-5 `}>{title}</div>
 					<p
-						className={`leading-5 text-center font-extralight text-[16px] hidden group-hover:block flex-1`}
+						className={`text-[#666] font-[300] text-[16px] text-center hidden group-hover:block flex-1`}
 					>
 						{description}
 					</p>
 					<Link
 						href={routers.products}
-						className="text-[14px] font-extralight border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:flex items-center justify-center gap-2 absolute bottom-[50px]"
+						className="text-[14px] text-[#666] font-[300] border border-solid border-[#555] rounded-[100px] px-[10px] cursor-pointer hidden group-hover:flex items-center justify-center gap-2 absolute bottom-[50px]"
 					>
 						<span className="min-w-[60px]">See more</span>
 						<i class="fa-solid fa-chevron-right text-[12px]"></i>
