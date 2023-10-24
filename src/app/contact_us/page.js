@@ -34,7 +34,7 @@ export default function ContactUs() {
 				<HeroGeneral
 					title="Contact us"
 					desc={[
-						`We love to hearing from you.<br/>Please fill out form, and we will get in touch shortly.`,
+						`Every client's need is unique. We love to hearing from you. <br /> Please fill out form, and we will get in touch shortly.`,
 					]}
 					urlImage={BACKGROUND_HERO?.src}
 					urlImageHero={IMAGE_HERO?.src}
@@ -42,8 +42,9 @@ export default function ContactUs() {
 				<div className="absolute top-[80%] right-0 left-0">
 					<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 						<Paper
+							className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
 							elevation={3}
-							sx={{ p: 4, borderRadius: '30px' }}
+							sx={{ p: 8, borderRadius: '30px' }}
 						>
 							<div className={`${cx('form_container')}`}>
 								<FormInput
@@ -109,7 +110,7 @@ export default function ContactUs() {
 									name="content"
 									className={`${cx('textarea')}`}
 								/>
-								<div className="flex items-end justify-end">
+								<div className="flex items-center justify-center">
 									<Button className={`${cx('btn')}`}>
 										Submit
 									</Button>

@@ -1,7 +1,7 @@
 import React from 'react';
-import BACKGROUND_HERO from '@/assets/images/about_us/bgc_hero.jpg';
+import BACKGROUND_HERO from '@/assets/images/about_us/bgc_hero_2.jpg';
 
-export default function HeroAboutUs({}) {
+export default function HeroAboutUs({ }) {
 	return (
 		<>
 			<div className={`w-full`}>

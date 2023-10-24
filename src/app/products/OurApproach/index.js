@@ -41,14 +41,15 @@ export default function OurApproach() {
 				>
 					Our Approach
 				</h1>
-				<p className="text-gray-400 text-center">
+				<p className="text-[#666] font-[300] text-[21px] text-center">
 					We prioritize effectiveness Each recommendation is made with
-					the end goal of assisting customers tn achieving their
+					the end goal {<br />} of assisting customers tn achieving their
 					specific objectives
 				</p>
 				<Paper
+					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
 					elevation={3}
-					sx={{ py: 2, borderRadius: '30px', marginTop: '30px' }}
+					sx={{ py: 2, borderRadius: '30px', marginTop: '30px', paddingTop: '50px' }}
 				>
 					<StylesContainer>
 						<OurApproachItem

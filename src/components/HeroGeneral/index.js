@@ -21,7 +21,7 @@ const HeroGeneral = ({ title, desc, urlImage, urlImageHero }) => {
 						</div>
 						{desc && (
 							<div
-								className={`text-white text-[21px] text-left leading-6`}
+								className={`text-[21px] font-[200] text-left text-white`}
 								dangerouslySetInnerHTML={{ __html: desc }}
 							></div>
 						)}

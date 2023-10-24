@@ -14,7 +14,7 @@ export default function Home() {
 			<div className={`w-full flex flex-col justify-between items-center`}>
 				<Hero />
 				<CoreValue />
-				<div className="xl:hidden">
+				<div className="lg:hidden">
 					<Product />
 				</div>
 				<div
@@ -34,7 +34,7 @@ export default function Home() {
 						<OurLibrary />
 					</div>
 				</div>
-				<div className="xl:hidden">
+				<div className="lg:hidden">
 					<OurLibrary />
 				</div>
 				<OurClient />

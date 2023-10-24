@@ -25,9 +25,8 @@ export default function ContentImageLeft({
 			<div
 				className={`${cx(
 					'content-left',
-				)} flex flex-col lg:items-start items-center ${
-					urlImage ? 'justify-start' : 'justify-center'
-				} flex-1`}
+				)} flex flex-col lg:items-start items-center ${urlImage ? 'justify-start' : 'justify-center'
+					} flex-1`}
 			>
 				{urlImage && (
 					<div
@@ -43,7 +42,7 @@ export default function ContentImageLeft({
 				)}
 				{descImage && (
 					<div
-						className={`font-bold text-[30px] text-black ${styleDescImage}`}
+						className={`font-extralight text-[36px] text-black ${styleDescImage}`}
 					>
 						{descImage}
 					</div>
@@ -52,7 +51,7 @@ export default function ContentImageLeft({
 			<div
 				className={`${cx(
 					'content-right-container',
-				)} w-full flex flex-col justify-start items-end`}
+				)} w-full flex flex-col justify-center items-start`}
 			>
 				{titleHeader && (
 					<div className={`${cx('title-header')} mb12`}>
@@ -75,7 +74,7 @@ export default function ContentImageLeft({
 								<div
 									className={`${cx(
 										'middle_desc_text',
-									)} text-[#000] text-[16px] sm:text-[18px]`}
+									)} text-[#000] text-[16px] font-extralight`}
 									key={index}
 									dangerouslySetInnerHTML={{ __html: item }}
 								></div>

@@ -22,10 +22,10 @@ export default function OurClient() {
 					Our Clients
 				</h1>
 				<p className="text-gray-400 text-center lg:text-start">
-					We personalize solutions to match
+					We earn trust for our services through the highest standards
 				</p>
 				<p className="text-gray-400 text-center lg:text-start">
-					your current status and threshold of expectation
+					of quality and integrity. Proudly to collaborate with
 				</p>
 				<ClientList clientLists={clientList} />
 			</div>

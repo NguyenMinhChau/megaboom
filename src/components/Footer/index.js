@@ -15,7 +15,7 @@ export default function Footer() {
 				}}
 			>
 				<div className="p-2 w-full flex flex-col gap-3 lg:flex-row px-[4vw] lg:px-[13vw] md:flex-row justify-between lg:items-start items-center">
-					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[6]">
+					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[6] mt-auto">
 						<Link href={routers.home} className="inline-block w-48">
 							<Image
 								src={Logo_White}
@@ -23,7 +23,7 @@ export default function Footer() {
 								className="block w-full"
 							/>
 						</Link>
-						<div className="text-white font-[200] text-[13px] text-center md:text-left leading-5">
+						<div className="text-white md:max-w-[260px] xl:max-w-[300px] font-[200] text-[13px] text-center md:text-left leading-5">
 							Copyright © 2023 Megaboom. All Rights Reserved. All
 							trademarks referenced herein are the properties of
 							their respective owners.
@@ -59,30 +59,30 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-col gap-2 md:items-end items-center justify-center flex-[1] md:flex-[2]">
 						<div className="flex flex-col items-center md:items-end gap-1">
-							<p className="text-center text-base font-bold text-white ">
+							<p className="text-center text-base font-[400] text-white ">
 								Explore
 							</p>
 							<Link
 								href={routers.home}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-white"
 							>
 								Home
 							</Link>
 							<Link
 								href={routers.about_us}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-white"
 							>
 								About us
 							</Link>
 							<Link
 								href={routers.products}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-white"
 							>
 								Products
 							</Link>
 							<Link
 								href={routers.contact_us}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-white"
 							>
 								Contact us
 							</Link>

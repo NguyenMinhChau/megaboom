@@ -18,12 +18,12 @@ export default function ContentImageRight({
 		<div
 			className={`${cx(
 				'content-container',
-			)} py-[20px] sm:py-[60px] lg:flex-row md:flex-row flex-col-reverse ${styleContainer}`}
+			)} py-[20px] lg:min-h-[220px] items-center sm:py-[60px] lg:flex-row flex-col-reverse ${styleContainer}`}
 		>
 			<div
 				className={`${cx(
 					'content-left',
-				)} w-full flex flex-col justify-start items-start`}
+				)} w-full lg:w-[62%] flex flex-col justify-start items-start`}
 			>
 				<div className={`${cx('middle')}`}>
 					{title && (
@@ -39,7 +39,7 @@ export default function ContentImageRight({
 							<div
 								className={`${cx(
 									'middle_desc_text',
-								)} text-black`}
+								)} text-black font-extralight`}
 								key={index}
 								dangerouslySetInnerHTML={{ __html: item }}
 							></div>
@@ -51,25 +51,25 @@ export default function ContentImageRight({
 			<div
 				className={`${cx(
 					'content-right',
-				)} flex flex-col lg:items-end items-center ${
-					urlImage ? 'justify-start' : 'justify-center'
-				} flex-1`}
+				)} flex md:relative lg:absolute flex-col lg:items-end items-center ${urlImage ? 'justify-start' : 'justify-center'
+					} flex-1`}
 			>
 				{urlImage && (
 					<div
 						className={`${cx('right_img')}`}
 						style={{
 							backgroundImage: `url('${urlImage}')`,
-							width: descImage ? '150px' : '250px',
+							width: descImage ? '150px' : '362px',
 							minWidth: descImage ? '150px' : '200px',
-							height: descImage ? '150px' : '250px',
+							height: descImage ? '150px' : '362px',
 							minHeight: descImage ? '150px' : '200px',
+							objectFit: 'cover'
 						}}
 					></div>
 				)}
 				{descImage && (
 					<div
-						className={`font-bold text-[30px] text-black ${styleDescImage}`}
+						className={`font-extralight text-[36px] text-black ${styleDescImage}`}
 					>
 						{descImage}
 					</div>

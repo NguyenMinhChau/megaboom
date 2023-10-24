@@ -42,18 +42,18 @@ export default function OurApproachItem({ urlImage, title, description }) {
 			>
 				<Image
 					src={urlImage}
-					className={`w-[100px] h-[100px]`}
+					className={`w-[80px] h-[80px]`}
 					objectFit="contain"
-					width={100}
-					height={100}
+					width={80}
+					height={80}
 					style={{
 						aspectRatio: 1,
 					}}
 				/>
-				<div className="p-3 flex flex-1 flex-col items-center">
-					<div className={`text-[21px] my-4`}>{title}</div>
+				<div className="p-3 flex flex-1 flex-col items-center font-extralight">
+					<div className={`font-[500] text-[#666] text-[21px] my-4`}>{title}</div>
 					<p
-						className={`leading-5 text-center font-extralight text-[18px]`}
+						className={`text-[#666] font-[300] text-[18px] text-center`}
 					>
 						{description}
 					</p>

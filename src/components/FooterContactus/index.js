@@ -15,7 +15,7 @@ export default function FooterContactUs() {
 				}}
 			>
 				<div className="p-2 w-full flex flex-col gap-3 lg:flex-row px-[4vw] lg:px-[13vw] md:flex-row justify-between lg:items-start items-center">
-					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[6]">
+					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[6] mt-auto">
 						<Link href={routers.home} className="inline-block w-48">
 							<Image
 								src={Logo_White}
@@ -23,17 +23,17 @@ export default function FooterContactUs() {
 								className="block w-full"
 							/>
 						</Link>
-						<div className="text-white font-[200] text-[13px] text-center md:text-left leading-5">
+						<div className="text-[#000] md:max-w-[260px] xl:max-w-[300px] font-[200] text-[13px] text-center md:text-left leading-5">
 							Copyright © 2023 Megaboom. All Rights Reserved. All
 							trademarks referenced herein are the properties of
 							their respective owners.
 						</div>
 					</div>
 					<div className="flex flex-[6] flex-col gap-1 items-center justify-center md:items-start mt-auto">
-						<p className="text-white font-[400] text-[16px]">
+						<p className="text-[#000] font-[400] text-[16px]">
 							Megaboom Company Limited
 						</p>
-						<p className="text-white font-[200] text-[13px]">
+						<p className="text-[#000] font-[200] text-[13px]">
 							Hotline:{' '}
 							<a
 								rel="nofollow noopener"
@@ -43,7 +43,7 @@ export default function FooterContactUs() {
 								1900 001234
 							</a>
 						</p>
-						<p className="text-white font-[200] text-[13px]">
+						<p className="text-[#000] font-[200] text-[13px]">
 							Email:{' '}
 							<a
 								rel="nofollow noopener"
@@ -53,36 +53,36 @@ export default function FooterContactUs() {
 								info@megaboom.com.vn
 							</a>
 						</p>
-						<p className="text-white font-[200] text-[13px]">
+						<p className="text-[#000] font-[200] text-[13px]">
 							Office: May Plaza, 65D Vo Van Tan Str., D.3, HCMC
 						</p>
 					</div>
 					<div className="flex flex-col gap-2 md:items-end items-center justify-center flex-[1] md:flex-[2]">
 						<div className="flex flex-col items-center md:items-end gap-1">
-							<p className="text-center text-base font-bold text-white ">
+							<p className="text-center text-base font-[400] text-[#000] ">
 								Explore
 							</p>
 							<Link
 								href={routers.home}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-[#000]"
 							>
 								Home
 							</Link>
 							<Link
 								href={routers.about_us}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-[#000]"
 							>
 								About us
 							</Link>
 							<Link
 								href={routers.products}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-[#000]"
 							>
 								Products
 							</Link>
 							<Link
 								href={routers.contact_us}
-								className="inline-block font-[200] text-[14px] text-white"
+								className="inline-block uppercase font-[200] text-[14px] text-[#000]"
 							>
 								Contact us
 							</Link>

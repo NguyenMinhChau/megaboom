@@ -46,6 +46,16 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 }));
 
 export default function CTA() {
+
+	const [isHoverButton, setIsHoverButton] = React.useState(false)
+	const handleHover = () => {
+		setIsHoverButton(true)
+	}
+
+	const handleMouseMove = () => {
+		setIsHoverButton(false)
+	}
+
 	return (
 		<div className="w-full h-full px-[13vw]">
 			<StylesContainer cols={2} spacing="8px">
@@ -57,17 +67,19 @@ export default function CTA() {
 						All-in-one solutions
 					</div>
 					<div className="text-white text-[18px] font-thin">
-						We personalize solutions to match your current status
-						and threshold of expectation.
+						We personalize solutions to match your current status <br />
+						and threshold of expectation
 					</div>
 					<Link
+						onMouseOver={handleHover}
+						onMouseOut={handleMouseMove}
 						href={routers.contact_us}
-						className="font-[500] text-center rounded-[100px] w-full lg:w-[269px] text-[16px] mt-3 bg-[#3BA1F2] py-3  border-[2px] border-solid border-white"
+						className="font-[500] text-center rounded-[100px] w-full lg:w-[269px] text-[16px] mt-3 bg-[#fff] hover:bg-[#3BA1F2] py-3  border-[2px] border-solid border-white"
 						style={{
-							color: "#fff",
+							color: `${isHoverButton ? "#fff" : PRIMARY_COLOR}`,
 						}}
 					>
-						Explore more
+						{isHoverButton ? "Explore more" : "Contact Us"}
 					</Link>
 				</div>
 				<div className="item flex items-center justify-center">

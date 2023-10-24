@@ -11,15 +11,12 @@ import FooterProduct from '@/components/FooterProduct';
 import { Paper } from '@mui/material';
 import OurApproach from './OurApproach';
 import KnowMore from './KnowMore';
+import HeroProduct from '@/components/HeroProduct';
 
 export default function ProductUs() {
 	return (
 		<>
-			<HeroGeneral
-				title="Opening"
-				desc={[,]}
-				urlImage={BACKGROUND_HERO?.src}
-			/>
+			<HeroProduct />
 			<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 				<div className={`flex flex-col gap-2`}>
 					<div
@@ -31,7 +28,7 @@ export default function ProductUs() {
 						className={`text-[21px] text-[#555555] font-extralight`}
 					>
 						With a modern and practical working style, we help
-						businesses grow in following three primary areas Find
+						businesses grow in following {<br />} three primary areas. Find
 						out how our solutions work!
 					</div>
 				</div>
@@ -39,18 +36,22 @@ export default function ProductUs() {
 					urlImage={ImageMarketing?.src}
 					desc={[
 						`<h1 style='font-size: 36px; color: #51d891; text-align: right'>Ecological System</h1>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Design the own system of communication channels to Create qualified acquisition funnel</p>`,
+						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Megaboom brings an integrated portfolio of consulting, experience, and expertise to design your own brand's ecological system for generating successful customer acquisition funnel and network expansion</p>`,
 						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Strategy consulting • Growth planning • Technical development</p>`,
 					]}
 					descImage=""
 				/>
-				<Paper elevation={3} sx={{ p: 2, borderRadius: '30px' }}>
+				<Paper
+					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
+					elevation={3}
+					sx={{ p: 6, borderRadius: '30px' }}
+				>
 					<ContentImageRight
 						urlImage={ImageEcosystem?.src}
 						desc={[
 							`<h1 style='font-size: 36px; color: #51d891; text-align: left'>Marketing Activities</h1>`,
 							`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: left;'>Develop automated support tools which help saving time transaction across platforms</p>`,
-							`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: left;'>Brand positioning • Graphic Aids • PR influencers</p>`,
+							`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: left;'>Intergrated marketing • SEO • Lead generation • Campaign activation</p>`,
 						]}
 						descImage=""
 					/>
@@ -59,8 +60,8 @@ export default function ProductUs() {
 					urlImage={ImageEBranding?.src}
 					desc={[
 						`<h1 style='font-size: 36px; color: #51d891; text-align: right'>Branding Services</h1>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Connect retable companies to customers and agency pertners through offline/ online events</p>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Intergrated marketing • SEO Lead generation • Campaign activation</p>`,
+						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>We help clients drive purposeful, sustainable and impactful brand positioning in modern landscape. Spread out your brand image to target customers and agency partners through both offline and online activities</p>`,
+						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Brand positioning • Graphic Aids • PR & influencers</p>`,
 					]}
 					descImage=""
 				/>
