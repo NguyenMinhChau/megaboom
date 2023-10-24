@@ -42,9 +42,9 @@ export default function ContactUs() {
 				<div className="absolute top-[80%] right-0 left-0">
 					<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 						<Paper
-							className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
+							className='shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 lg:p-16'
 							elevation={3}
-							sx={{ p: 8, borderRadius: '30px' }}
+							sx={{ borderRadius: '30px' }}
 						>
 							<div className={`${cx('form_container')}`}>
 								<FormInput
