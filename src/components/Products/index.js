@@ -1,7 +1,7 @@
 'use client';
 import { styled } from '@mui/material';
 import Branding from '@/assets/images/product_cta_outLibrary/branding.png';
-import ECOSYSTEM from '@/assets/images/product_cta_outLibrary/ECOSYSTEM.png';
+import ECOSYSTEM from '@/assets/images/product_cta_outLibrary/ecocta.png';
 import Marketing from '@/assets/images/product_cta_outLibrary/Marketing.png';
 import React from 'react';
 import ProductItem from './ProductItem';
