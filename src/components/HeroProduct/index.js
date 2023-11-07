@@ -5,7 +5,7 @@ function HeroProduct() {
     return (
         <div
             style={{
-                backgroundColor: `${PRIMARY_COLOR}`
+                backgroundColor: `#fff`
             }}
             className="w-full min-h-[78px] flex items-center justify-center px-[4vw] lg:px-[13vw]">
 

@@ -34,17 +34,16 @@ export default function OurApproach() {
 		<>
 			<div className="w-full flex items-center justify-center flex-col my-[10px]">
 				<h1
-					className="text-[40px] space-x-7"
+					className="text-[36px] space-x-7 font-extralight"
 					style={{
-						color: GREEN_PRIMARY_COLOR,
+						color: "#51d891",
 					}}
 				>
 					Our Approach
 				</h1>
-				<p className="text-[#666] font-[300] text-[21px] text-center">
-					We prioritize effectiveness Each recommendation is made with
-					the end goal {<br />} of assisting customers tn achieving their
-					specific objectives
+				<p className="text-[#aeaeae] font-[300] text-[16px] text-center">
+					We prioritize effectiveness. Each recommendation is made with the end goal
+					{<br />} of assisting customers in achieving their specific objectives
 				</p>
 				<Paper
 					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
@@ -54,22 +53,22 @@ export default function OurApproach() {
 					<StylesContainer>
 						<OurApproachItem
 							title="01. Analyzing"
-							description="The foundation of each proposal an understanding of the Industry benchmark and the target user's behavior"
+							description="The foundation of each proposal is an understanding of the industry benchmark and the target user's behavior"
 							urlImage={Analyzing_Icon}
 						/>
 						<OurApproachItem
 							title="02. Planning"
-							description="Based on analysis phase. we develop strategies and Inltlatlves to help our clients reach they objectives With clear growth roadmap"
+							description="Based on analysis phase, we develop strategies and initiatives to help our clients reach their objectives with clear growth roadmap"
 							urlImage={Planning_Icon}
 						/>
 						<OurApproachItem
 							title="03. Launching"
-							description="Yay. It's tme to shlnel We keep track the action plan aligned well With the process and project management method"
+							description="Yay, it's time to shine! We keep track the action plan aligned well with the process and project management method"
 							urlImage={Launching_Icon}
 						/>
 						<OurApproachItem
 							title="04. Optimizing"
-							description="The cntlcal stage for amplification the evaluation of OKRs and the timely adjustment to manmze Impacts"
+							description="Come back where we start, the critical stage for amplification is the evaluation of OKRs and the timely adjustment to maximize impacts"
 							urlImage={Evaluating_Icon}
 						/>
 					</StylesContainer>

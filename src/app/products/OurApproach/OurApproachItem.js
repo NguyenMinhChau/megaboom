@@ -53,7 +53,7 @@ export default function OurApproachItem({ urlImage, title, description }) {
 				<div className="p-3 flex flex-1 flex-col items-center font-extralight">
 					<div className={`font-[500] text-[#666] text-[21px] my-4`}>{title}</div>
 					<p
-						className={`text-[#666] font-[300] text-[18px] text-center`}
+						className={`text-[#666] font-[300] text-[16px] text-center`}
 					>
 						{description}
 					</p>

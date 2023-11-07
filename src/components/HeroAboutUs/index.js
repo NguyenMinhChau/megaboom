@@ -30,8 +30,8 @@ export default function HeroAboutUs({ }) {
 							className={`text-[21px] font-[200] text-left text-white`}
 						>
 							Established in 2022, Megaboom Co , Ltd. is a media,
-							advertising, event organization and technology
-							development service company In the financial sector
+							advertising, event organization <br></br> and technology
+							development service company in the financial sector
 						</p>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import routers from '@/routers/router';
 import React from 'react';
-import Logo_White from '@/assets/images/logo/LOGO_MEGABOOM_WHITE.png';
+import Logo from '@/assets/images/logo/LOGO_MEGABOOM.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { YELLOW_PRIMARY_COLOR } from '@/styles/color.global';
@@ -18,7 +18,7 @@ export default function FooterContactUs() {
 					<div className="flex flex-col gap-3 lg:items-start items-center justify-center flex-[6] mt-auto">
 						<Link href={routers.home} className="inline-block w-48">
 							<Image
-								src={Logo_White}
+								src={Logo}
 								alt="logo"
 								className="block w-full"
 							/>
@@ -40,7 +40,7 @@ export default function FooterContactUs() {
 								className="text-primary font-[200] text-[13px]"
 								href="tel:1900001234"
 							>
-								1900 001234
+								+84 969 822018
 							</a>
 						</p>
 						<p className="text-[#000] font-[200] text-[13px]">

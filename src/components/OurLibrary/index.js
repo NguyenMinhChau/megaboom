@@ -44,6 +44,9 @@ const StylesContainer = styled('div')(({ theme, cols, spacing }) => ({
 		[theme.breakpoints.between('md', 'lg')]: {
 			width: '276px',
 		},
+		[theme.breakpoints.between('lg', 'xl')]: {
+			width: '300px',
+		},
 		borderRadius: '30px',
 		backgroundColor: '#fff',
 		color: '#000',

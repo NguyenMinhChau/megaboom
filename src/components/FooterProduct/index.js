@@ -40,7 +40,7 @@ export default function FooterProduct() {
 								className="text-primary font-[200] text-[13px]"
 								href="tel:1900001234"
 							>
-								1900 001234
+								+84 969 822018
 							</a>
 						</p>
 						<p className="text-white font-[200] text-[13px]">

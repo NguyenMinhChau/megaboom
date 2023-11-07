@@ -13,13 +13,13 @@ export default function AboutUs() {
 			<HeroAboutUs />
 			<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 				<Paper
-					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
+					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
 					elevation={3} sx={{ p: 2, borderRadius: '30px' }}
 				>
 					<ContentImageLeft
 						urlImage={''}
 						desc={[
-							`<p style='color: #96938e; font-size: 16px; font-weight: 300; text-align: left;'>Helping to open up a new perspective of the financial market in Vietnam, Megabom creates the real opportunity for trustworthy financial institues to interact and promote their products and service to qualified leads through sustainbale marketing activities</p>`,
+							`<p style='color: #96938e; font-size: 16px; font-weight: 300; text-align: left;'>Helping to open up a new perspective of the financial market in Vietnam, Megaboom creates the real opportunity for trustworthy financial institues to interact and promote their products and service to qualified leads through sustainable marketing activities</p>`,
 						]}
 						descImage="Mission"
 						styleContainer={`py-[0px!important]`}
@@ -27,7 +27,7 @@ export default function AboutUs() {
 					/>
 				</Paper>
 				<Paper
-					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
+					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
 					elevation={3}
 					sx={{ p: 2, borderRadius: '30px', margin: '100px 0' }}
 				>
@@ -42,7 +42,7 @@ export default function AboutUs() {
 					/>
 				</Paper>
 				<Paper
-					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
+					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
 					elevation={3}
 					sx={{ p: 2, borderRadius: '30px', marginBottom: '50px' }}
 				>

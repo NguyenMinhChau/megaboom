@@ -5,10 +5,12 @@ import LogoMegaBoomWhite from '../../assets/images/logo/LOGO_MEGABOOM_WHITE.png'
 import Link from 'next/link';
 import routers from '@/routers/router';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Header() {
 	const router = useRouter()
+	const pathName = usePathname()
+	const [isProductPage, setIsProductPage] = React.useState(false)
 	const [sticky, setSticky] = React.useState(false);
 	const [isOpen, setIsOpen] = React.useState(false);
 	const handleStickyNavbar = () => {
@@ -22,12 +24,16 @@ export default function Header() {
 		window.addEventListener('scroll', handleStickyNavbar);
 	});
 
+	React.useEffect(() => {
+		setIsProductPage(prev => pathName.startsWith('/products') ? true : false)
+	}, [pathName])
+
 	const openMenuTablet = {
 		open: { transform: 'translateX(0px)', transition: 2 },
 		closed: { transform: 'translateX(-1025px)', transition: 2 },
 	};
 
-	const LogoSticky = !sticky ? LogoMegaBoomWhite : LogoMegaBoom;
+	const LogoSticky = !sticky ? isProductPage ? LogoMegaBoom : LogoMegaBoomWhite : LogoMegaBoom;
 	const genericHamburgerLine = `h-1 w-full my-1 rounded-full transition ease transform duration-300`;
 
 	return (
@@ -52,7 +58,7 @@ export default function Header() {
 					>
 						<Link href={`${routers.home}`} className='block'>
 							<span
-								className={`${!sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? isProductPage ? 'text-black' : 'text-white' : 'text-black'
 									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Home
@@ -60,7 +66,7 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.about_us}`} className='block'>
 							<span
-								className={`${!sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? isProductPage ? 'text-black' : 'text-white' : 'text-black'
 									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								About Us
@@ -68,7 +74,7 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.products}`} className='block'>
 							<span
-								className={`${!sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? isProductPage ? 'text-black' : 'text-white' : 'text-black'
 									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Products
@@ -76,7 +82,7 @@ export default function Header() {
 						</Link>
 						<Link href={`${routers.contact_us}`} className='block'>
 							<span
-								className={`${!sticky ? 'text-white' : 'text-black'
+								className={`${!sticky ? isProductPage ? 'text-black' : 'text-white' : 'text-black'
 									} font-medium cursor-pointer hover:text-[#51d891]`}
 							>
 								Contact Us

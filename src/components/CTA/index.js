@@ -79,7 +79,7 @@ export default function CTA() {
 							color: `${isHoverButton ? "#fff" : PRIMARY_COLOR}`,
 						}}
 					>
-						{isHoverButton ? "Explore more" : "Contact Us"}
+						{isHoverButton ? "Contact Us" : "Explore more"}
 					</Link>
 				</div>
 				<div className="item flex items-center justify-center">

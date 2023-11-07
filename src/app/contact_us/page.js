@@ -1,7 +1,5 @@
 'use client';
-import HeroGeneral from '@/components/HeroGeneral';
-import BACKGROUND_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg';
-import IMAGE_HERO from '@/assets/images/contact_us/image_hero.png';
+
 import React from 'react';
 import className from 'classnames/bind';
 import { Paper, TextareaAutosize } from '@mui/material';
@@ -12,6 +10,7 @@ import SelectValue from '@/components/SelectValue';
 import Button from '@/components/Button';
 import { setData } from '@/appState/reducer';
 import FooterContactUs from '@/components/FooterContactus';
+import HeroContactUs from '@/components/HeroContactUs';
 
 const cx = className.bind(styles);
 
@@ -31,15 +30,8 @@ export default function ContactUs() {
 	return (
 		<>
 			<div className="relative w-full h-full">
-				<HeroGeneral
-					title="Contact us"
-					desc={[
-						`Every client's need is unique. We love to hearing from you. <br /> Please fill out form, and we will get in touch shortly.`,
-					]}
-					urlImage={BACKGROUND_HERO?.src}
-					urlImageHero={IMAGE_HERO?.src}
-				/>
-				<div className="absolute top-[80%] right-0 left-0">
+				<HeroContactUs />
+				<div className="absolute top-[100%] right-0 left-0">
 					<div className="py-[50px] px-[4vw] lg:px-[13vw]">
 						<Paper
 							className='shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 lg:p-16'

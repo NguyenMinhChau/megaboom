@@ -33,35 +33,31 @@ export default function ProductUs() {
 					</div>
 				</div>
 				<ContentImageLeft
-					urlImage={ImageMarketing?.src}
+					urlImage={ImageEcosystem?.src}
 					desc={[
 						`<h1 style='font-size: 36px; color: #51d891; text-align: right'>Ecological System</h1>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Megaboom brings an integrated portfolio of consulting, experience, and expertise to design your own brand's ecological system for generating successful customer acquisition funnel and network expansion</p>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Strategy consulting • Growth planning • Technical development</p>`,
+						`<p style='color: #aeaeae; font-size: 16px; font-weight: 300; text-align: right;'>Megaboom brings an integrated portfolio of consulting, experience, and expertise to design your own brand's ecological system for generating successful customer acquisition funnel and network expansion</p>`,
+						`<p style='color: #000; font-size: 18px; font-weight: 300; text-align: right;'>Strategy consulting • Growth planning • Technical development</p>`,
 					]}
 					descImage=""
 				/>
-				<Paper
-					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
-					elevation={3}
-					sx={{ p: 6, borderRadius: '30px' }}
-				>
+				<div className="mt-[40px]">
 					<ContentImageRight
-						urlImage={ImageEcosystem?.src}
+						urlImage={ImageMarketing?.src}
 						desc={[
 							`<h1 style='font-size: 36px; color: #51d891; text-align: left'>Marketing Activities</h1>`,
-							`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: left;'>Develop automated support tools which help saving time transaction across platforms</p>`,
-							`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: left;'>Intergrated marketing • SEO • Lead generation • Campaign activation</p>`,
+							`<p style='color: #aeaeae; font-size: 16px; font-weight: 300; text-align: left;'>Applying various digital platforms, we develop customized marketing strategies with relevant execution plan that optimize available resources. All initiatives become lively through our hands-on fintech insight</p>`,
+							`<p style='color: #000; font-size: 18px; font-weight: 300; text-align: left;'>Intergrated marketing • SEO • Lead generation • Campaign activation</p>`,
 						]}
 						descImage=""
 					/>
-				</Paper>
+				</div>
 				<ContentImageLeft
 					urlImage={ImageEBranding?.src}
 					desc={[
 						`<h1 style='font-size: 36px; color: #51d891; text-align: right'>Branding Services</h1>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>We help clients drive purposeful, sustainable and impactful brand positioning in modern landscape. Spread out your brand image to target customers and agency partners through both offline and online activities</p>`,
-						`<p style='color: #aeaeae; font-size: 18px; font-weight: 300; text-align: right;'>Brand positioning • Graphic Aids • PR & influencers</p>`,
+						`<p style='color: #aeaeae; font-size: 16px; font-weight: 300; text-align: right;'>We help clients drive purposeful, sustainable and impactful brand positioning in modern landscape. Spread out your brand image to target customers and agency partners through both offline and online activities</p>`,
+						`<p style='color: #000; font-size: 18px; font-weight: 300; text-align: right;'>Brand positioning • Graphic Aids • PR & influencers</p>`,
 					]}
 					descImage=""
 				/>

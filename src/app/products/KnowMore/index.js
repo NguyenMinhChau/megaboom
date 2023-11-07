@@ -7,7 +7,7 @@ import routers from '@/routers/router';
 export default function KnowMore() {
 	return (
 		<>
-			<div className="w-full flex items-center justify-center flex-col my-[100px]">
+			<div className="w-full flex items-center justify-center flex-col my-[100px] font-extralight">
 				<h1
 					className="text-[40px] space-x-7 text-center"
 					style={{
@@ -16,7 +16,7 @@ export default function KnowMore() {
 				>
 					Want to know more?
 				</h1>
-				<p className="text-gray-400 text-center">
+				<p className="text-[#666] font-[300] text-center">
 					We are here to make you satisfied
 				</p>
 				<div className="flex items-center justify-center">
