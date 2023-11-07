@@ -3,7 +3,7 @@ import HeroGeneral from '@/components/HeroGeneral';
 import BACKGROUND_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg';
 import ImageMarketing from '@/assets/images/product/marketing.png';
 import ImageEcosystem from '@/assets/images/product/ecosystem.png';
-import ImageEBranding from '@/assets/images/product/branding.png';
+import ImageEBranding from '@/assets/images/product/ecosystem01.png';
 import React from 'react';
 import ContentImageLeft from '@/components/ContentImageLeft';
 import ContentImageRight from '@/components/ContentImageRight';
@@ -28,8 +28,8 @@ export default function ProductUs() {
 						className={`text-[21px] text-[#555555] font-extralight`}
 					>
 						With a modern and practical working style, we help
-						businesses grow in following {<br />} three primary areas. Find
-						out how our solutions work!
+						businesses grow in following {<br />} three primary
+						areas. Find out how our solutions work!
 					</div>
 				</div>
 				<ContentImageLeft

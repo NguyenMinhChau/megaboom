@@ -1,7 +1,6 @@
 'use client';
 import Header from '@/components/Header';
 import './globals.css';
-import Footer from '@/components/Footer';
 import { UseProvider } from '@/appState';
 import ScrollToTop from '@/components/ScrollToTop';
 
@@ -9,7 +8,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
-				<meta charSet="utf-8" />
+				{/* <meta charSet="utf-8" /> */}
 				<meta
 					content="width=device-width, initial-scale=1"
 					name="viewport"
@@ -18,12 +17,7 @@ export default function RootLayout({ children }) {
 					name="description"
 					content="We pride ourselves in delivering the highest quality expo within our industry that our attendees, exhibitors and sponsors have come to expect."
 				/>
-				<link
-					rel="icon"
-					href="./logo/LOGO_MEGABOOM.png"
-					type="image/x-icon"
-					sizes="16x16"
-				/>
+				<link rel="icon" href="./logo/LOGO_MEGABOOM.png" />
 				<link
 					rel="stylesheet"
 					href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"

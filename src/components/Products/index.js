@@ -1,8 +1,8 @@
 'use client';
 import { styled } from '@mui/material';
-import Branding from '@/assets/images/product_cta_outLibrary/Branding.png';
-import ECOSYSTEM from '@/assets/images/product_cta_outLibrary/ECOSYSTEM.png';
-import Marketing from '@/assets/images/product_cta_outLibrary/Marketing.png';
+import Branding from '@/assets/images/product_cta_outLibrary/brandingcta.png';
+import ECOSYSTEM from '@/assets/images/product_cta_outLibrary/ecocta.png';
+import Marketing from '@/assets/images/product_cta_outLibrary/marketingcta.png';
 import React from 'react';
 import ProductItem from './ProductItem';
 import { PRIMARY_COLOR } from '@/styles/color.global';
