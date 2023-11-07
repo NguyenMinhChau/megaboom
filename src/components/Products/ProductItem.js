@@ -50,7 +50,7 @@ export default function ProductItem({ urlImage, title, description }) {
 			>
 				<Image
 					src={urlImage}
-					className={`w-[200px] h-[200px] p-[10px] group-hover:hidden rounded-[30px]`}
+					className={`w-[215px] h-[215px] group-hover:hidden rounded-[30px]`}
 					objectFit="cover"
 				/>
 				{/* <img
@@ -67,12 +67,12 @@ export default function ProductItem({ urlImage, title, description }) {
 						backgroundPosition: 'center',
 					}}
 				></div> */}
-				<div className="p-3 flex flex-col items-center justify-center font-extralight">
-					<div className={`text-[#000] font-[500] text-[21px] mb-5 `}>
+				<div className="flex flex-col items-center justify-center font-extralight">
+					<div className={`text-[#000] font-[500] text-[21px] mb-5 group-hover:pt-5`}>
 						{title}
 					</div>
 					<p
-						className={`text-[#666] font-[300] text-[16px] text-center hidden group-hover:block flex-1`}
+						className={`text-[#666] p-3 font-[300] text-[16px] text-center hidden group-hover:block flex-1`}
 					>
 						{description}
 					</p>

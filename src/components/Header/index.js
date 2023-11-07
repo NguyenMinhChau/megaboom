@@ -94,14 +94,14 @@ export default function Header() {
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						<div
-							className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen
+							className={`${genericHamburgerLine} ${!sticky ? isProductPage ? "bg-black" : "bg-white" : "bg-black"} ${isOpen
 								? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
 						/>
-						<div className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+						<div className={`${genericHamburgerLine} ${!sticky ? isProductPage ? "bg-black" : "bg-white" : "bg-black"} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
 						<div
-							className={`${genericHamburgerLine} ${sticky ? "bg-black" : "bg-white"} ${isOpen
+							className={`${genericHamburgerLine} ${!sticky ? isProductPage ? "bg-black" : "bg-white" : "bg-black"} ${isOpen
 								? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
 								: "opacity-50 group-hover:opacity-100"
 								}`}
