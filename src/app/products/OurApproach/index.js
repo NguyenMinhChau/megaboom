@@ -45,10 +45,9 @@ export default function OurApproach() {
 					We prioritize effectiveness. Each recommendation is made with the end goal
 					{<br />} of assisting customers in achieving their specific objectives
 				</p>
-				<Paper
-					className='shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
-					elevation={3}
-					sx={{ py: 2, borderRadius: '30px', marginTop: '30px', paddingTop: '50px' }}
+				<div
+					className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] mb-[50px] mt-[50px]'
+					style={{ padding: '10px', borderRadius: '30px', marginTop: '30px', paddingTop: '50px' }}
 				>
 					<StylesContainer>
 						<OurApproachItem
@@ -72,7 +71,7 @@ export default function OurApproach() {
 							urlImage={Evaluating_Icon}
 						/>
 					</StylesContainer>
-				</Paper>
+				</div>
 			</div>
 		</>
 	);

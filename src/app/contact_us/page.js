@@ -33,10 +33,9 @@ export default function ContactUs() {
 				<HeroContactUs />
 				<div className="absolute top-[100%] right-0 left-0">
 					<div className="py-[50px] px-[4vw] lg:px-[13vw]">
-						<Paper
-							className='shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 lg:p-16'
-							elevation={3}
-							sx={{ borderRadius: '30px' }}
+						<div
+							className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] p-4 lg:p-16'
+							style={{ borderRadius: '30px' }}
 						>
 							<div className={`${cx('form_container')}`}>
 								<FormInput
@@ -108,7 +107,7 @@ export default function ContactUs() {
 									</Button>
 								</div>
 							</div>
-						</Paper>
+						</div>
 					</div>
 					<FooterContactUs />
 				</div>

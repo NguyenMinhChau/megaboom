@@ -12,9 +12,9 @@ export default function AboutUs() {
 		<>
 			<HeroAboutUs />
 			<div className="py-[50px] px-[4vw] lg:px-[13vw]">
-				<Paper
-					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
-					elevation={3} sx={{ p: 2, borderRadius: '30px' }}
+				<div
+					className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] mb-[50px]'
+					style={{ padding: '10px', borderRadius: '30px' }}
 				>
 					<ContentImageLeft
 						urlImage={''}
@@ -25,11 +25,10 @@ export default function AboutUs() {
 						styleContainer={`py-[0px!important]`}
 						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
-				</Paper>
-				<Paper
-					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
-					elevation={3}
-					sx={{ p: 2, borderRadius: '30px', margin: '100px 0' }}
+				</div>
+				<div
+					className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] my-[100px]'
+					style={{ padding: '10px', borderRadius: '30px' }}
 				>
 					<ContentImageLeft
 						urlImage={''}
@@ -40,11 +39,10 @@ export default function AboutUs() {
 						styleContainer={`py-[0px!important]`}
 						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
-				</Paper>
-				<Paper
-					className='!shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
-					elevation={3}
-					sx={{ p: 2, borderRadius: '30px', marginBottom: '50px' }}
+				</div>
+				<div
+					className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] mb-[50px] mt-[50px]'
+					style={{ padding: '10px', borderRadius: '30px' }}
 				>
 					<ContentImageRight
 						urlImage={Image_Team_Work?.src}
@@ -56,7 +54,7 @@ export default function AboutUs() {
 						styleContainer={`py-[0px!important]`}
 						styleDescImage={`text-[#4ca9f3!important]`}
 					/>
-				</Paper>
+				</div>
 			</div>
 			<FooterAboutUs />
 		</>

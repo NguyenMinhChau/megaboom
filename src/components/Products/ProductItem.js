@@ -50,8 +50,8 @@ export default function ProductItem({ urlImage, title, description }) {
 			>
 				<Image
 					src={urlImage}
-					className={`w-full h-[180px] group-hover:hidden rounded-[30px]`}
-					objectFit="contain"
+					className={`w-[200px] h-[200px] p-[10px] group-hover:hidden rounded-[30px]`}
+					objectFit="cover"
 				/>
 				{/* <img
 					alt="image"
@@ -68,7 +68,7 @@ export default function ProductItem({ urlImage, title, description }) {
 					}}
 				></div> */}
 				<div className="p-3 flex flex-col items-center justify-center font-extralight">
-					<div className={`text-[#000] font-[500] text-[21px] my-5 `}>
+					<div className={`text-[#000] font-[500] text-[21px] mb-5 `}>
 						{title}
 					</div>
 					<p
