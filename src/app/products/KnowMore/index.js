@@ -9,7 +9,7 @@ export default function KnowMore() {
 		<>
 			<div className="w-full flex items-center justify-center flex-col my-[100px] font-extralight">
 				<h1
-					className="text-[40px] space-x-7 text-center"
+					className="text-[40px] space-x-7 text-center font-[400]"
 					style={{
 						color: GREEN_PRIMARY_COLOR,
 					}}

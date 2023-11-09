@@ -10,7 +10,9 @@ import SelectValue from '@/components/SelectValue';
 import Button from '@/components/Button';
 import { setData } from '@/appState/reducer';
 import FooterContactUs from '@/components/FooterContactus';
-import HeroContactUs from '@/components/HeroContactUs';
+import HeroGeneral from '../../components/HeroGeneral';
+import IMAGE_HERO from '@/assets/images/contact_us/image_hero.png'
+import HOME_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg'
 
 const cx = className.bind(styles);
 
@@ -30,11 +32,18 @@ export default function ContactUs() {
 	return (
 		<>
 			<div className="relative w-full h-full">
-				<HeroContactUs />
-				<div className="absolute top-[100%] right-0 left-0">
+				<HeroGeneral
+					title="Contact us"
+					desc={[
+						`Every client's need is unique. We love to hearing from you. <br /> Please fill out form, and we will get in touch shortly.`,
+					]}
+					urlImage={HOME_HERO?.src}
+					urlImageHero={IMAGE_HERO?.src}
+				/>
+				<div className="absolute top-[80%] right-0 left-0">
 					<div className="py-[50px] px-[4vw] lg:px-[13vw]">
-						<div
-							className='shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] p-4 lg:p-16'
+						<Paper
+							className='!shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] p-4 lg:p-16'
 							style={{ borderRadius: '30px' }}
 						>
 							<div className={`${cx('form_container')}`}>
@@ -79,9 +88,11 @@ export default function ContactUs() {
 									value={purpose}
 									placeholder="Purpose: Please choose one of the following here..."
 									data={[
-										{ value: 1, label: 'Option 1' },
-										{ value: 2, label: 'Option 2' },
-										{ value: 3, label: 'Option 3' },
+										{ value: 1, label: 'Consultancy' },
+										{ value: 2, label: 'Enquiry' },
+										{ value: 3, label: 'Career' },
+										{ value: 4, label: 'Network' },
+										{ value: 5, label: 'Other' },
 									]}
 									nameSet="purpose"
 									stateSelect={showSelect}
@@ -107,7 +118,7 @@ export default function ContactUs() {
 									</Button>
 								</div>
 							</div>
-						</div>
+						</Paper>
 					</div>
 					<FooterContactUs />
 				</div>

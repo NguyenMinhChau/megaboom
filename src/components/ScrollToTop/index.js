@@ -27,9 +27,8 @@ export default function ScrollToTop() {
 
 	return (
 		<div
-			className={`fixed bottom-8 right-8 z-[99] bg-transparent rounded-lg border-[${
-				isVisible ? '2px' : '0px'
-			}] border-black`}
+			className={`fixed bottom-8 right-8 z-[99] bg-transparent rounded-[50%] border-[${isVisible ? '2px' : '0px'
+				}] border-black`}
 		>
 			{isVisible && (
 				<div

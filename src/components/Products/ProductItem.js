@@ -68,7 +68,7 @@ export default function ProductItem({ urlImage, title, description }) {
 					}}
 				></div> */}
 				<div className="flex flex-col items-center justify-center font-extralight">
-					<div className={`text-[#000] font-[500] text-[21px] mb-5 group-hover:pt-5`}>
+					<div className={`text-[#000] font-[500] text-[21px] mb-5 group-hover:pt-10 group-hover:mb-0`}>
 						{title}
 					</div>
 					<p

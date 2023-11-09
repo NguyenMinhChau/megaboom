@@ -20,13 +20,13 @@ export default function ContentImageLeft({
 		<div
 			className={`${cx(
 				'content-container',
-			)} lg:flex-row md:flex-row flex-col-reverse px-[20px] py-[30px] sm:py-[60px] ${styleContainer}`}
+			)} lg:flex-row md:flex-row flex-col-reverse px-[40px] py-[30px] sm:py-[60px] ${styleContainer}`}
 		>
 			<div
 				className={`${cx(
 					'content-left',
 				)} flex flex-col lg:items-start items-center ${urlImage ? 'justify-start' : 'justify-center'
-					} flex-1`}
+					} min-w-[130px]`}
 			>
 				{urlImage && (
 					<div

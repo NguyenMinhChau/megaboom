@@ -22,7 +22,7 @@ export default function AboutUs() {
 							`<p style='color: #96938e; font-size: 16px; font-weight: 300; text-align: left;'>Helping to open up a new perspective of the financial market in Vietnam, Megaboom creates the real opportunity for trustworthy financial institues to interact and promote their products and service to qualified leads through sustainable marketing activities</p>`,
 						]}
 						descImage="Mission"
-						styleContainer={`py-[0px!important]`}
+						styleContainer={`py-[15px!important]`}
 						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
 				</div>
@@ -36,7 +36,7 @@ export default function AboutUs() {
 							`<p style='color: #96938e; font-size: 16px; font-weight: 300; text-align: left;'>To create the deepest connection in our ecosystem and the widest spread of interaction with end-users.</p>`,
 						]}
 						descImage="Vision"
-						styleContainer={`py-[0px!important]`}
+						styleContainer={`py-[15px!important]`}
 						styleDescImage={`text-[#4ca9f3!important] font-normal`}
 					/>
 				</div>
@@ -51,7 +51,7 @@ export default function AboutUs() {
 							`<p style='color: #96938e; font-size: 16px; font-weight: 300; text-align: left;'>People and Product are at the core of Megaboom's identity. We have established a dynamic environment in which all members can unlock their full potential. With the motto "striving for excellence", we believe that each member of the team has their own color and contribution to form a unique Megaboom through five key characteristics: Sincere, Collaborative, Talented, Respect, Joyful. This is also a prerequisite for our team to grow together, thereby solidifying our position as one of the leading media units in financial sector.</p>`,
 						]}
 						descImage=""
-						styleContainer={`py-[0px!important]`}
+						styleContainer={`py-[15px!important]`}
 						styleDescImage={`text-[#4ca9f3!important]`}
 					/>
 				</div>

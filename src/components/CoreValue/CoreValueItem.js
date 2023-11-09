@@ -52,7 +52,7 @@ export default function CoreValueItem({
 				cols={4}
 				spacing="8px"
 				colorBgcHover={colorBgcHover}
-				className={`shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] group duration-500 transition-all`}
+				className={`shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] group duration-500 transition-all`}
 			>
 				<Image
 					src={urlImage}

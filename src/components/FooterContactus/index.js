@@ -1,6 +1,6 @@
 import routers from '@/routers/router';
 import React from 'react';
-import Logo from '@/assets/images/logo/LOGO_MEGABOOM.png';
+import Logo from '@/assets/images/logo/LogoMegaBoomBlack.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { YELLOW_PRIMARY_COLOR } from '@/styles/color.global';

@@ -1,5 +1,6 @@
 'use client';
 import Hero from '@/components/Hero';
+import HeroContactUs from '@/components/HeroContactUs'
 import CoreValue from '@/components/CoreValue';
 import BackgroundCTA from '@/assets/images/product_cta_outLibrary/bgcta.jpg';
 import Product from '@/components/Products';
@@ -14,7 +15,7 @@ export default function Home() {
 			<div
 				className={`w-full flex flex-col justify-between items-center`}
 			>
-				<Hero />
+				<HeroContactUs />
 				<CoreValue />
 				<div className="lg:hidden">
 					<Product />
