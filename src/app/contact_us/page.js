@@ -12,7 +12,7 @@ import { setData } from '@/appState/reducer';
 import FooterContactUs from '@/components/FooterContactus';
 import HeroGeneral from '../../components/HeroGeneral';
 import IMAGE_HERO from '@/assets/images/contact_us/image_hero.png'
-import HOME_HERO from '@/assets/images/home_page/HOMEPAGE_HERO.jpg'
+import HOME_HERO from '@/assets/images/contact_us/ContactUs.jpg'
 
 const cx = className.bind(styles);
 

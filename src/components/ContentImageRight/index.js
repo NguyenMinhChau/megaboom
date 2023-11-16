@@ -2,6 +2,7 @@
 import React from 'react';
 import className from 'classnames/bind';
 import styles from './styles.module.css';
+import { usePathname } from 'next/navigation';
 
 const cx = className.bind(styles);
 
@@ -14,6 +15,14 @@ export default function ContentImageRight({
 	styleDescImage,
 	styleContainer,
 }) {
+
+	const pathName = usePathname()
+	const [isProductPage, setIsProductPage] = React.useState(false)
+
+	React.useEffect(() => {
+		setIsProductPage(prev => pathName.startsWith('/products') ? true : false)
+	}, [pathName])
+
 	return (
 		<div
 			className={`${cx(
@@ -51,7 +60,7 @@ export default function ContentImageRight({
 			<div
 				className={`${cx(
 					'content-right',
-				)} flex md:relative lg:absolute flex-col lg:items-end items-center ${urlImage ? 'justify-start' : 'justify-center'
+				)} flex ${isProductPage ? 'relative' : "md:relative lg:absolute"} flex-col lg:items-end items-center ${urlImage ? 'justify-start' : 'justify-center'
 					} flex-1`}
 			>
 				{urlImage && (
@@ -59,10 +68,10 @@ export default function ContentImageRight({
 						className={`${cx('right_img')}`}
 						style={{
 							backgroundImage: `url('${urlImage}')`,
-							width: descImage ? '150px' : '362px',
-							minWidth: descImage ? '150px' : '200px',
-							height: descImage ? '150px' : '362px',
-							minHeight: descImage ? '150px' : '200px',
+							width: descImage ? '150px' : isProductPage ? '250px' : '362px',
+							minWidth: descImage ? '150px' : isProductPage ? '250px' : '200px',
+							height: descImage ? '150px' : isProductPage ? '250px' : '362px',
+							minHeight: descImage ? '150px' : isProductPage ? '250px' : '200px',
 							objectFit: 'cover'
 						}}
 					></div>

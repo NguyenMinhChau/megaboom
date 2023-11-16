@@ -74,7 +74,7 @@ export default function ContentImageLeft({
 								<div
 									className={`${cx(
 										'middle_desc_text',
-									)} text-[#000] text-[16px] ml-[20px] font-extralight`}
+									)} text-[#000] text-[16px] ml-[100px] font-extralight`}
 									key={index}
 									dangerouslySetInnerHTML={{ __html: item }}
 								></div>
